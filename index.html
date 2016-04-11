@@ -17,6 +17,7 @@
 <div id="search-panel" ng-controller="filterController">
     <select id="language-option" ng-change="findLanguage()" ng-model="selectedLanguage" ng-options="language for language in languages">
         <option value="" selected="selected">Choose a language</option>
+
     </select>
     <select id="population-option" ng-change="findPopulation()" ng-model="selectedPopulation" ng-options="population for population in populations">
         <option value="" selected="selected">Choose a population</option>
