@@ -1,108 +1,104 @@
-var china= {
-		name: "China",
-		languages: {
-			Mandarin,
-			Cantonese
-
-		}
-	}	
-var india= {
-		name: "India",
-		languages: {
-				Hindi,
-				English
-		}
-	}	
-var unitedStates= {
-		name: "United States",
-		languages: {
-			English,
-			Spanish,
-			Chinese
-			
-		}
-	}	
-var indonesia= {
-		name: "Indonesia",
-		languages: {
-			Bahasa Indonesia,
-			English,
-			Javanese 
-
-		}
-	}	
-var brazil= {
-		name: "Brazil",
-		languages: {
-				Portuguese,
-				Spanish,
-				English,
-				French
-		}
-	}	
-var pakistan= {
-		name: "Pakistan",
-		languages: {
-				Urdu,
-				English,
-				Punjabi
-
-		}
-	}	
-var nigeria= {
-		name: "Nigeria",
-		languages: {
-				English,
-				French
-		}
-	}	
-var bangladesh= {
-		name: "Bangladesh",
-		languages: {
-			Bengali,
-			English
-		}
-	}	
-var russia= {
-		name: "Russia",
-		languages: {
-					Russian, 
-		}
-	}	
-var japan= {
-		name: "Japan",
-		languages: {
-				Japanese
-
-		}
-	}	
-var mexico= {
-		name: "Mexico",
-		languages: {
-				Spanish 
-		}
-	}	
-var philippines= {
-		name: "Philippines",
-		languages: {
-			Filipino,
-			English
-		}
-	}	
-var ethiopia= {
-		name: "Ethiopia",
-		languages: {
-			Oromiffa,
-			English
-		}
-	}	
-var vietnam= {
-		name: "Vietnam",
-		languages: {
-			Vietnamese,
-			French
-		}
-	}	
+var langArray = [
+{
+	name: "China",
+	languages: [
+		'Mandarin',
+		'Cantonese'
+	]
+},
+{
+	name: "India",
+	languages: [
+		'Hindi',
+		'English'
+	]
+},
+{
+	name: "United States",
+	languages: [
+		'English',
+		'Spanish',
+		'Chinese'	
+	]
+},
+{
+	name: "Indonesia",
+	languages: [
+		'Bahasa Indonesia',
+		'English',
+		'Javanese'
+	]
+},
+{
+	name: "Brazil",
+	languages: [
+		'Portuguese',
+		'Spanish',
+		'English',
+		'French'
+	]
+},
+{
+	name: "Pakistan",
+	languages: [
+		'Urdu',
+		'English',
+		'Punjabi'
+	]
+},
+{
+	name: "Nigeria",
+	languages: [
+			'English',
+			'French'
+	]
+},
+{
+	name: "Bangladesh",
+	languages: [
+		'Bengali',
+		'English'
+	]
+},	
+{
+	name: "Russia",
+	languages: [
+		'Russian' 
+	]
+},
+{
+	name: "Japan",
+	languages: [
+		'Japanese'
+	]
+},
+{
+	name: "Mexico",
+	languages: [
+		'Spanish'
+	]
+},
+{
+	name: "Philippines",
+	languages: [
+		'Filipino',
+		'English'
+	]
+},
+{	
+	name: "Ethiopia",
+	languages: [
+		'Oromiffa',
+		'English'
+	]
+},
+{
+	name: "Vietnam",
+	languages: [
+		'Vietnamese',
+		'French'
+	]
+}
 var egypt= {
 		name: "Egypt",
 		languages: {
