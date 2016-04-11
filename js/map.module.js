@@ -2,7 +2,7 @@ var interactiveMap = angular.module('interactiveMap', ['ngRoute']);
 
 interactiveMap.config(function($routeProvider){
 
-    $routeProvider.when('/',{
+    $routeProvider.when('/#',{
         templateUrl: 'index.html',
         controller: 'filterController'
     });
@@ -11,7 +11,7 @@ interactiveMap.config(function($routeProvider){
     //     controller: 'blahblahController'
     // });
     $routeProvider.otherwise({
-        redirectoTo: '/'
+        redirectoTo: '/#'
     });
 
 });

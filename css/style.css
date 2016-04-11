@@ -22,5 +22,11 @@ button {
     box-shadow: 1px 0px 5px 1px;
 }
 
+#map{
+  margin: 80px auto;
+  width: 1000px;
+  height: 600px;
+
+}
 
 

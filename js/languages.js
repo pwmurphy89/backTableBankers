@@ -1,4 +1,4 @@
-var languages = [ "Mandarin", "Spanish", "English", "Hindi/Urdu", "Arabic", "Portuguese", "Russian", "Japanese", "French", "Malay/Indonesian" ]; 
+var languages = [ "Mandarin", "Spanish", "English", "Hindi", "Arabic", "Portuguese", "Russian", "Japanese", "French", "Indonesian" ]; 
 
 
 

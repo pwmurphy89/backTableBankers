@@ -7,6 +7,10 @@
 	<script type="text/javascript" src="js/map.module.js"></script>
 	<script type="text/javascript" src="js/languages.js"></script>
 	<script type="text/javascript" src="js/filterController.js"></script>  
+	<script type="text/javascript" src="https://code.angularjs.org/1.5.3/angular-route.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.20/topojson.min.js"></script>
+	<script type="text/javascript" src="js/datamaps.js"></script>
 </head>
 <body>
 
@@ -14,18 +18,28 @@
     <select id="language-option" ng-change="findLanguage()" ng-model="selectedLanguage" ng-options="language for language in languages">
         <option value="" selected="selected">Choose a language</option>
     </select>
-<!--     <select id="population-option" ng-change="findPopulation()" ng-model="selectedPopulation" ng-options="population.population for population in populations">
+    <select id="population-option" ng-change="findPopulation()" ng-model="selectedPopulation" ng-options="population for population in populations">
         <option value="" selected="selected">Choose a population</option>
     </select>
-    <select id="gdp-option" ng-change="findGdp()" ng-model="selectedGdp" ng-options="gdp.gdp for gdp in gdps">
+    <select id="gdp-option" ng-change="findGdp()" ng-model="selectedGdp" ng-options="gdp for gdp in gdps">
         <option value="" selected="selected">Choose a GDP amount</option>
     </select>
     <div id="reset-map-div">
         <button ng-click="resetMap()">Reset Map</button>
-    </div>  -->
+    </div> 
 </div>
 
+<div id="map"></div>
+
 <div ng-view></div>
+
+<script>
+
+var map = new Datamap({element: document.getElementById('map')});
+
+</script>
+
+
 
 </body>
 </html>
