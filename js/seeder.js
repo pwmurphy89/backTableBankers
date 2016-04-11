@@ -14,6 +14,12 @@ function addCountries(popdata, gdpdata){
 		var myPop = popData[i].value;
 		var myGDP = gdpData[i].value;
 		var myLanguages = [];
+		for (j=0;j<langArray.length;j++){
+			if (myCountry == langArray[j].name) {
+				// there's a match; add languages to the master array
+				myLanguages = langArray[j].languages;
+			}
+		}
 		countries.push(new Country(myCountry, myPop, myGDP, myLanguages));
 	}
 }
