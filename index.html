@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="interactiveMap">
+<head>
+	<title>Interactive Map</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+	<script type="text/javascript" src="js/map.module.js"></script>
+	<script type="text/javascript" src="js/filterController.js"></script>  
+</head>
+<body>
+
+<div id="search-panel"></div>
+    <select id="language-option" ng-change="findLanguage()" ng-model="selectedLanguage" ng-options="language.language for language in languages">
+        <option value="" selected="selected">Choose a language</option>
+    </select>
+    <select id="population-option" ng-change="findPopulation()" ng-model="selectedPopulation" ng-options="population.population for population in populations">
+        <option value="" selected="selected">Choose a population</option>
+    </select>
+    <select id="gdp-option" ng-change="findGdp()" ng-model="selectedGdp" ng-options="gdp.gdp for gdp in gdps">
+        <option value="" selected="selected">Choose a GDP amount</option>
+    </select>
+    <div id="reset-map-div">
+        <button ng-click="resetMap()">Reset Map</button>
+    </div> 
+</div>
+
+<div ng-view></div>
+
+</body>
+</html>

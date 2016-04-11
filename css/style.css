@@ -1,0 +1,26 @@
+button {
+  background-color: #4099ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 2px;
+  padding: 3px 8px;
+  outline: none;
+  cursor: pointer;
+}
+
+#search-panel{
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    width: 180px;
+    height: 100px;
+    box-shadow: 1px 0px 5px 1px;
+}
+
+
+
