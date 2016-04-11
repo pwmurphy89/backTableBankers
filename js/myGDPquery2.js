@@ -1,9 +1,9 @@
-// 20160411155536
-// http://api.worldbank.org/countries/all/indicators/NY.GDP.MKTP.CD?date=2016:2016&MRV=1&format=json&perpage=300
-var myGDPdata =
+// 20160411172703
+// http://api.worldbank.org/countries/all/indicators/NY.GDP.MKTP.CD?date=2016:2016&MRV=1&format=json&page=2
+var myGDPdata2 =
 [
   {
-    "page": 1,
+    "page": 2,
     "pages": 5,
     "per_page": "50",
     "total": 248
@@ -15,10 +15,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "1A",
-        "value": "Arab World"
+        "id": "BB",
+        "value": "Barbados"
       },
-      "value": "2869034798597.43",
+      "value": "4354500000",
       "decimal": "0",
       "date": "2014"
     },
@@ -28,10 +28,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "S3",
-        "value": "Caribbean small states"
+        "id": "BY",
+        "value": "Belarus"
       },
-      "value": "71288024078.5994",
+      "value": "76139250364.5185",
       "decimal": "0",
       "date": "2014"
     },
@@ -41,10 +41,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "B8",
-        "value": "Central Europe and the Baltics"
+        "id": "BE",
+        "value": "Belgium"
       },
-      "value": "1457322987324.99",
+      "value": "531546586178.579",
       "decimal": "0",
       "date": "2014"
     },
@@ -54,10 +54,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "Z4",
-        "value": "East Asia & Pacific (all income levels)"
+        "id": "BZ",
+        "value": "Belize"
       },
-      "value": "21467980438307.3",
+      "value": "1699154132.0551",
       "decimal": "0",
       "date": "2014"
     },
@@ -67,10 +67,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "4E",
-        "value": "East Asia & Pacific (developing only)"
+        "id": "BJ",
+        "value": "Benin"
       },
-      "value": "12609716376487.1",
+      "value": "9575356734.7269",
       "decimal": "0",
       "date": "2014"
     },
@@ -80,255 +80,8 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "XC",
-        "value": "Euro area"
-      },
-      "value": "13410232162147.3",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "Z7",
-        "value": "Europe & Central Asia (all income levels)"
-      },
-      "value": "23183777043003.9",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "7E",
-        "value": "Europe & Central Asia (developing only)"
-      },
-      "value": "1817461195726.02",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "EU",
-        "value": "European Union"
-      },
-      "value": "18514155872554.5",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "F1",
-        "value": "Fragile and conflict affected situations"
-      },
-      "value": "722929410347.732",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "XE",
-        "value": "Heavily indebted poor countries (HIPC)"
-      },
-      "value": "630170350584.032",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "XD",
-        "value": "High income"
-      },
-      "value": "52850488461670.5",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "XR",
-        "value": "High income: nonOECD"
-      },
-      "value": "6120970051382.75",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "XS",
-        "value": "High income: OECD"
-      },
-      "value": "46740992585960.1",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "ZJ",
-        "value": "Latin America & Caribbean (all income levels)"
-      },
-      "value": "6253493117688.62",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "XJ",
-        "value": "Latin America & Caribbean (developing only)"
-      },
-      "value": "4845035083138.3",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "XL",
-        "value": "Least developed countries: UN classification"
-      },
-      "value": "887220702199.033",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "XO",
-        "value": "Low & middle income"
-      },
-      "value": "25148400193876.7",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "XM",
-        "value": "Low income"
-      },
-      "value": "397849188348.196",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "XN",
-        "value": "Lower middle income"
-      },
-      "value": "5781068574586.2",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "ZQ",
-        "value": "Middle East & North Africa (all income levels)"
-      },
-      "value": "3520091046667.3",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "XQ",
-        "value": "Middle East & North Africa (developing only)"
-      },
-      "value": "1556767724659.63",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "XP",
-        "value": "Middle income"
-      },
-      "value": "24748448400393.4",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "XU",
-        "value": "North America"
-      },
-      "value": "19210139300922",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "XY",
-        "value": "Not classified"
+        "id": "BM",
+        "value": "Bermuda"
       },
       "value": null,
       "decimal": "0",
@@ -340,10 +93,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "OE",
-        "value": "OECD members"
+        "id": "BT",
+        "value": "Bhutan"
       },
-      "value": "48834111552229.5",
+      "value": "1958803866.95068",
       "decimal": "0",
       "date": "2014"
     },
@@ -353,10 +106,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "S4",
-        "value": "Other small states"
+        "id": "BO",
+        "value": "Bolivia"
       },
-      "value": "100485400426.698",
+      "value": "32996187988.4226",
       "decimal": "0",
       "date": "2014"
     },
@@ -366,10 +119,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "S2",
-        "value": "Pacific island small states"
+        "id": "BA",
+        "value": "Bosnia and Herzegovina"
       },
-      "value": "8699784931.292",
+      "value": "18521475376.4754",
       "decimal": "0",
       "date": "2014"
     },
@@ -379,10 +132,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "S1",
-        "value": "Small states"
+        "id": "BW",
+        "value": "Botswana"
       },
-      "value": "180473209436.589",
+      "value": "15813364345.317",
       "decimal": "0",
       "date": "2014"
     },
@@ -392,10 +145,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "8S",
-        "value": "South Asia"
+        "id": "BR",
+        "value": "Brazil"
       },
-      "value": "2588688024254.73",
+      "value": "2416635506076.31",
       "decimal": "0",
       "date": "2014"
     },
@@ -405,10 +158,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "ZG",
-        "value": "Sub-Saharan Africa (all income levels)"
+        "id": "BN",
+        "value": "Brunei Darussalam"
       },
-      "value": "1745241568843.78",
+      "value": "17104656669.2976",
       "decimal": "0",
       "date": "2014"
     },
@@ -418,10 +171,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "ZF",
-        "value": "Sub-Saharan Africa (developing only)"
+        "id": "BG",
+        "value": "Bulgaria"
       },
-      "value": "1728322128341.14",
+      "value": "56717054673.7214",
       "decimal": "0",
       "date": "2014"
     },
@@ -431,10 +184,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "XT",
-        "value": "Upper middle income"
+        "id": "BF",
+        "value": "Burkina Faso"
       },
-      "value": "18958148605044.6",
+      "value": "12542221941.8594",
       "decimal": "0",
       "date": "2014"
     },
@@ -444,10 +197,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "1W",
-        "value": "World"
+        "id": "BI",
+        "value": "Burundi"
       },
-      "value": "77960606594141.6",
+      "value": "3093647226.8107",
       "decimal": "0",
       "date": "2014"
     },
@@ -457,10 +210,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "AF",
-        "value": "Afghanistan"
+        "id": "CV",
+        "value": "Cabo Verde"
       },
-      "value": "20038215159.3873",
+      "value": "1871187070.99534",
       "decimal": "0",
       "date": "2014"
     },
@@ -470,10 +223,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "AL",
-        "value": "Albania"
+        "id": "KH",
+        "value": "Cambodia"
       },
-      "value": "13211513725.5881",
+      "value": "16777820332.7059",
       "decimal": "0",
       "date": "2014"
     },
@@ -483,10 +236,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "DZ",
-        "value": "Algeria"
+        "id": "CM",
+        "value": "Cameroon"
       },
-      "value": "213518488688.12",
+      "value": "32050817632.9602",
       "decimal": "0",
       "date": "2014"
     },
@@ -496,8 +249,21 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "AS",
-        "value": "American Samoa"
+        "id": "CA",
+        "value": "Canada"
+      },
+      "value": "1785386649602.19",
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "KY",
+        "value": "Cayman Islands"
       },
       "value": null,
       "decimal": "0",
@@ -509,8 +275,34 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "AD",
-        "value": "Andorra"
+        "id": "CF",
+        "value": "Central African Republic"
+      },
+      "value": "1722529061.41602",
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "TD",
+        "value": "Chad"
+      },
+      "value": "13922224560.7939",
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "JG",
+        "value": "Channel Islands"
       },
       "value": null,
       "decimal": "0",
@@ -522,8 +314,125 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "AO",
-        "value": "Angola"
+        "id": "CL",
+        "value": "Chile"
+      },
+      "value": "258061522886.53",
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "CN",
+        "value": "China"
+      },
+      "value": "10354831729340.4",
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "CO",
+        "value": "Colombia"
+      },
+      "value": "377739622865.838",
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "KM",
+        "value": "Comoros"
+      },
+      "value": "623751049.725008",
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "CD",
+        "value": "Congo, Dem. Rep."
+      },
+      "value": "33121070959.3936",
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "CG",
+        "value": "Congo, Rep."
+      },
+      "value": "14177440494.8152",
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "CR",
+        "value": "Costa Rica"
+      },
+      "value": "49552580683.1461",
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "CI",
+        "value": "Cote d'Ivoire"
+      },
+      "value": "34253607832.4092",
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "HR",
+        "value": "Croatia"
+      },
+      "value": "57113389357.4472",
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "CU",
+        "value": "Cuba"
       },
       "value": null,
       "decimal": "0",
@@ -535,47 +444,8 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "AG",
-        "value": "Antigua and Barbuda"
-      },
-      "value": "1220976011.11111",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "AR",
-        "value": "Argentina"
-      },
-      "value": "537659972702.092",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "AM",
-        "value": "Armenia"
-      },
-      "value": "11644438422.9844",
-      "decimal": "0",
-      "date": "2014"
-    },
-    {
-      "indicator": {
-        "id": "NY.GDP.MKTP.CD",
-        "value": "GDP at market prices (current US$)"
-      },
-      "country": {
-        "id": "AW",
-        "value": "Aruba"
+        "id": "CW",
+        "value": "Curacao"
       },
       "value": null,
       "decimal": "0",
@@ -587,10 +457,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "AU",
-        "value": "Australia"
+        "id": "CY",
+        "value": "Cyprus"
       },
-      "value": "1454675479665.84",
+      "value": "23226158986.1653",
       "decimal": "0",
       "date": "2014"
     },
@@ -600,10 +470,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "AT",
-        "value": "Austria"
+        "id": "CZ",
+        "value": "Czech Republic"
       },
-      "value": "436887543466.95",
+      "value": "205269709743.466",
       "decimal": "0",
       "date": "2014"
     },
@@ -613,10 +483,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "AZ",
-        "value": "Azerbaijan"
+        "id": "DK",
+        "value": "Denmark"
       },
-      "value": "75198010965.1919",
+      "value": "342362478767.505",
       "decimal": "0",
       "date": "2014"
     },
@@ -626,10 +496,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "BS",
-        "value": "Bahamas, The"
+        "id": "DJ",
+        "value": "Djibouti"
       },
-      "value": "8510500000",
+      "value": "1589026157.8836",
       "decimal": "0",
       "date": "2014"
     },
@@ -639,10 +509,10 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "BH",
-        "value": "Bahrain"
+        "id": "DM",
+        "value": "Dominica"
       },
-      "value": "33851063829.7872",
+      "value": "524074074.074074",
       "decimal": "0",
       "date": "2014"
     },
@@ -652,10 +522,140 @@ var myGDPdata =
         "value": "GDP at market prices (current US$)"
       },
       "country": {
-        "id": "BD",
-        "value": "Bangladesh"
+        "id": "DO",
+        "value": "Dominican Republic"
       },
-      "value": "172886567164.179",
+      "value": "64137819040.4929",
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "EC",
+        "value": "Ecuador"
+      },
+      "value": "100917372000",
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "EG",
+        "value": "Egypt, Arab Rep."
+      },
+      "value": "301498960051.639",
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "SV",
+        "value": "El Salvador"
+      },
+      "value": "25163700000",
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "GQ",
+        "value": "Equatorial Guinea"
+      },
+      "value": "15529729676.6886",
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "ER",
+        "value": "Eritrea"
+      },
+      "value": null,
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "EE",
+        "value": "Estonia"
+      },
+      "value": "26485161115.9446",
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "ET",
+        "value": "Ethiopia"
+      },
+      "value": "55612228233.5179",
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "FO",
+        "value": "Faroe Islands"
+      },
+      "value": null,
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "FJ",
+        "value": "Fiji"
+      },
+      "value": "4531817940.97388",
+      "decimal": "0",
+      "date": "2014"
+    },
+    {
+      "indicator": {
+        "id": "NY.GDP.MKTP.CD",
+        "value": "GDP at market prices (current US$)"
+      },
+      "country": {
+        "id": "FI",
+        "value": "Finland"
+      },
+      "value": "272216575502.251",
       "decimal": "0",
       "date": "2014"
     }
