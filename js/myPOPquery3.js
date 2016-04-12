@@ -198,7 +198,7 @@ var myPOPdata3 =
       },
       "country": {
         "id": "GY",
-        "value": "Guyana"
+        "value": "French Guiana"
       },
       "value": "763893",
       "decimal": "0",

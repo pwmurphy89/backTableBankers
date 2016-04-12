@@ -198,7 +198,7 @@ var myGDPdata3 =
       },
       "country": {
         "id": "GY",
-        "value": "Guyana"
+        "value": "French Guiana"
       },
       "value": "3096747286.98392",
       "decimal": "0",
