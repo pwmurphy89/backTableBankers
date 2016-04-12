@@ -1,342 +1,371 @@
 var langArray = [
-{
-	name: "China",
-	languages: [
-		'Mandarin',
-		'Cantonese'
-	]
-},
-{
-	name: "India",
-	languages: [
-		'Hindi',
-		'English'
-	]
-},
-{
-	name: "United States",
-	languages: [
-		'English',
-		'Spanish',
-		'Chinese'	
-	]
-},
-{
-	name: "Indonesia",
-	languages: [
-		'Bahasa Indonesia',
-		'English',
-		'Javanese'
-	]
-},
-{
-	name: "Brazil",
-	languages: [
-		'Portuguese',
-		'Spanish',
-		'English',
-		'French'
-	]
-},
-{
-	name: "Pakistan",
-	languages: [
-		'Urdu',
-		'English',
-		'Punjabi'
-	]
-},
-{
-	name: "Nigeria",
-	languages: [
-			'English',
-			'French'
-	]
-},
-{
-	name: "Bangladesh",
-	languages: [
-		'Bengali',
-		'English'
-	]
-},	
-{
-	name: "Russia",
-	languages: [
-		'Russian' 
-	]
-},
-{
-	name: "Japan",
-	languages: [
-		'Japanese'
-	]
-},
-{
-	name: "Mexico",
-	languages: [
-		'Spanish'
-	]
-},
-{
-	name: "Philippines",
-	languages: [
-		'Filipino',
-		'English'
-	]
-},
-{	
-	name: "Ethiopia",
-	languages: [
-		'Oromiffa',
-		'English'
-	]
-},
-{
-	name: "Vietnam",
-	languages: [
-		'Vietnamese',
-		'French'
-	]
-}
-var egypt= {
+	{
+		name: "China",
+		languages: {
+			"Mandarin": 100
+		}
+	},	
+	{
+		name: "India",
+		languages: {
+			"Hindi": 100,
+			"English": 41
+		}
+	},	
+	{
+		name: "United States",
+		languages: {
+			"English": 90,
+			"Spanish": 12,
+			"Mandarin": 3,
+		}
+	},	
+	{
+		name: "Indonesia",
+		languages: {
+			"Indonesian": 100,
+			"English": 12,
+			"Mandarin": 3
+		}
+	},	
+	{
+		name: "Brazil",
+		languages: {
+			"Portuguese": 100,
+			"Spanish": 25,
+			"English": 30,
+			"French": 5
+		}
+	},	
+	{
+		name: "Pakistan",
+		languages: {
+			"Punjabi": 48,
+			"Arabic": 10,
+			"English": 20,
+			"French": 5
+		}
+	},	
+	{
+		name: "Nigeria",
+		languages: {
+			"English": 80,
+			"French": 30
+		}
+	},	
+	{
+		name: "Bangladesh",
+		languages: {
+			"Bengali": 100,
+			"English": 5
+		}
+	},	
+	{
+		name: "Russia",
+		languages: {
+			"Russian": 100
+		}
+	},	
+	{
+		name: "Japan",
+		languages: {
+			"Japanese": 100,
+			"English": 40
+		}
+	},	
+	{
+		name: "Mexico",
+		languages: {
+			"Spanish": 93,
+			"English": 20
+		}
+	},	
+	{
+		name: "Philippines",
+		languages: {
+			"Fillpino": 100,
+			"English": 20
+		}
+	},	
+	{
+		name: "Ethiopia",
+		languages: {
+			"Oromiffa": 100,
+			"English": 10,
+			"Arabic": 10
+		}
+	},	
+	{
+		name: "Vietnam",
+		languages: {
+			"Vietnamese": 100,
+			"French": 20,
+			"English": 20,
+			"Mandarin": 10
+		}
+	},	
+	{
 		name: "Egypt",
 		languages: {
-			Arabic,
-			English
+			"Arabic": 80,
+			"English": 30,
+			"French": 20
 		}
-	}	
-var iran= {
+	},	
+	{
 		name: "Iran",
 		languages: {
-			Persian
+			"Arabic": 70,
+			"Persian": 80
 		}
-	}	
-var germany= {
+	},	
+	{
 		name: "Germany",
 		languages: {
-			German,
-			French,
-			English
+			"German": 100,
+			"English": 80,
+			"French": 20,
+			"Spanish": 10,
+			"Russian": 10
 		}
-	}	
-var turkey= {
+	},	
+	{
 		name: "Turkey",
 		languages: {
-			Turkish
+			"Turkish": 100,
+			"Arabic": 70,
 		}
-	}	
-var congoDeRev= {
-		name: "Congo De Rev",
+	},	
+	{
+		name: "Cote d'Ivoire",
 		languages: {
-			French
+			"French": 80,
 		}
-	}	
-var thailand= {
+	},	
+	{
 		name: "Thailand",
 		languages: {
-			Thai
+			"Thai": 100,
+			"English": 30,
+			"French": 10
 		}
-	}	
-var france= {
+	},	
+	{
 		name: "France",
 		languages: {
-			French
+			"French": 100,
+			"English": 60,
+			"Spanish": 10
 		}
-	}	
-var unitedKingdom= {
+	},	
+	{
 		name: "United Kingdom",
 		languages: {
-			English
+			"English": 100,
+			"French": 20
 		}
-	}	
-var italy= {
+	},	
+	{
 		name: "Italy",
 		languages: {
-			Italian
+			"Italian": 100,
+			"French": 20,
+			"German": 20,
+			"English": 20
 		}
-	}	
-var burma= {
+	},	
+	{
 		name: "Burma",
 		languages: {
-			Burmese,
-			Chinese,
-			English
+			"Burmese": 100
 		}
-	}	
-var southAfrica= {
+	},	
+	{
 		name: "South Africa",
 		languages: {
-			Afrikaans,
-			English
+			"Afrikaans": 50,
+			"English": 70
 		}
-	}	
-var tanzania= {
+	},	
+	{
 		name: "Tanzania",
 		languages: {
-			Swahili,
-			English
+			"Swahili": 80,
+			"English": 60,
+			"Arabic": 20
 		}
-	}	
-var southKorea= {
-		name: "Korea, South",
+	},	
+	{
+		name: "South Korea",
 		languages: {
-			Korean,
-			English
+			"Korean": 100,
+			"English": 50
 		}
-	}	
-var spain= {
+	},	
+	{
 		name: "Spain",
 		languages: {
-			Spanish,
-			Catalan
+			"Spanish": 100,
+			"French": 10,
+			"English": 40,
+			"Portuguese": 10
 		}
-	}	
-var colombia= {
+	},	
+	{
 		name: "Colombia",
 		languages: {
-			Spanish
+			"Spanish": 100,
+			"English": 20
 		}
-	}	
-var kenya= {
+	},	
+	{
 		name: "Kenya",
 		languages: {
-			English,
-			Swahili
+			"English": 70,
+			"Swahili": 20
 		}
-	}	
-var ukraine= {
+	},	
+	{
 		name: "Ukraine",
 		languages: {
-			Ukrainian,
-			Russian
+			"Ukranian": 90,
+			"Russian": 20,
+			"English": 20
 		}
-	}	
-var argentina= {
+	},	
+	{
 		name: "Argentina",
 		languages: {
-			Spanish
+			"Spanish": 100,
+			"English": 50,
+			"German": 10,
+			"French": 10
 		}
-	}	
-var algeria= {
+	},	
+	{
 		name: "Algeria",
 		languages: {
-			Arabic,
-			Berber,
-			French
+			"Arabic": 100,
+			"French": 60
 		}
-	}	
-var poland= {
+	},	
+	{
 		name: "Poland",
 		languages: {
-			Polish
+			"Polish": 100,
+			"German": 20,
+			"Russian": 30,
+			"English": 40
 		}
-	}	
-var uganda= {
+	},	
+	{
 		name: "Uganda",
 		languages: {
-			Swahili,
-			English
+			"Swahili": 50,
+			"English": 80,
+			"Arabic": 20
 		}
-	}	
-var iraq= {
+	},	
+	{
 		name: "Iraq",
 		languages: {
-			Arabic,
-			Kurdish
+			"Arabic": 80,
+			"Kurdish": 20
 		}
-	}	
-var sudan= {
+	},	
+	{
 		name: "Sudan",
 		languages: {
-			Arabic,
-			English
+			"Arabic": 80,
+			"English": 60
 		}
-	}	
-var canada= {
+	},	
+	{
 		name: "Canada",
 		languages: {
-			French,
-			English
+			"English": 80,
+			"French": 22,
+			"Hindi": 1
 		}
-	}	
-var morocco= {
+	},	
+	{
 		name: "Morocco",
 		languages: {
-			Arabic,
-			Berber,
-			French
+			"Arabic": 100,
+			"French": 60,
+			"Berber": 40
 		}
-	}	
-var afghanistan= {
+	},	
+	{
 		name: "Afghanistan",
 		languages: {
-			Pashto,
-			Dari
+			"Arabic": 100,
+			"Turkish": 20
 		}
-	}	
-var nepal= {
+	},	
+	{
 		name: "Nepal",
 		languages: {
-			Nepali
+			"Nepali": 50,
+			"Arabic": 10,
 		}
-	}	
-var malaysia= {
+	},	
+	{
 		name: "Malaysia",
 		languages: {
-			Malay,
-			English,
-			Chinese
+			"Malay": 90,
+			"English": 40,
+			"Mandarin": 30,
+			"Thai": 10
 		}
-	}	
-var peru= {
+	},	
+	{
 		name: "Peru",
 		languages: {
-			Spanish
+			"Spanish": 85
 		}
-	}	
-var venezuela= {
+	},	
+	{
 		name: "Venezuela",
 		languages: {
-			Spanish
+			"Spanish": 100
 		}
-	}	
-var uzbekistan= {
+	},	
+	{
 		name: "Uzbekistan",
 		languages: {
-			Uzbek,
-			Russian
+			"Uzbek": 100,
+			"Russian": 14
 		}
-	}	
-var saudiArabia= {
+	},	
+	{
 		name: "Saudi Arabia",
 		languages: {
-			Arabic
+			"Arabic": 100
 		}
-	}	
-var yemen= {
+	},	
+	{
 		name: "Yemen",
 		languages: {
-			Arabic
+			"Arabic": 100
 		}
-	}	
-var ghana= {
+	},	
+	{
 		name: "Ghana",
 		languages: {
-			English
+			"English": 40
 		}
-	}	
-var mozambiqu= {
+	},	
+	{
 		name: "Mozambique",
 		languages: {
-			Portuguese
+			"Portuguese": 11,
 		}
-	}	
-var northKorea= {
-		name: "Korea, North",
+	},	
+	{
+		name: "North Korea",
 		languages: {
-			Korean
+			"Korean": 100
 		}
-	}	
-
-
+	}
+]
