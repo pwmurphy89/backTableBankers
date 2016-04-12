@@ -20,7 +20,7 @@ var countryLangs = [
 		languages: {
 			"English": 90,
 			"Spanish": 12,
-			"Mandarin": 3,
+			"Mandarin": 3
 		}
 	},	
 	{
