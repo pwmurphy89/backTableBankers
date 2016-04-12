@@ -41,6 +41,7 @@ interactiveMap.controller('filterController', function($scope, $http, $routePara
 						// Gets Value of selected language in countries that have it
 						console.log(countries[i]);
 				    	var langPerc = countries[i].languages[$scope.selectedLanguage];
+				    	console.log(langPerc);
 				    	//if langPerc > 20{
 				    		//do this
 				    	
