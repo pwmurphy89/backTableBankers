@@ -302,7 +302,7 @@ var myGDPdata3 =
       },
       "country": {
         "id": "IR",
-        "value": "Iran, Islamic Rep."
+        "value": "Iran"
       },
       "value": "425326068422.881",
       "decimal": "0",
@@ -458,7 +458,7 @@ var myGDPdata3 =
       },
       "country": {
         "id": "KP",
-        "value": "Korea, Dem. People’s Rep."
+        "value": "North Korea"
       },
       "value": null,
       "decimal": "0",
@@ -471,7 +471,7 @@ var myGDPdata3 =
       },
       "country": {
         "id": "KR",
-        "value": "Korea, Rep."
+        "value": "South Korea"
       },
       "value": "1410382988616.48",
       "decimal": "0",

@@ -549,7 +549,7 @@ var myPOPdata5 =
       },
       "country": {
         "id": "VE",
-        "value": "Venezuela, RB"
+        "value": "Venezuela"
       },
       "value": "30693827",
       "decimal": "0",
@@ -601,7 +601,7 @@ var myPOPdata5 =
       },
       "country": {
         "id": "YE",
-        "value": "Yemen, Rep."
+        "value": "Yemen"
       },
       "value": "26183676",
       "decimal": "0",

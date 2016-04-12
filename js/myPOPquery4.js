@@ -549,7 +549,7 @@ var myPOPdata4 =
       },
       "country": {
         "id": "RU",
-        "value": "Russian Federation"
+        "value": "Russia"
       },
       "value": "143819569",
       "decimal": "0",

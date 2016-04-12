@@ -302,7 +302,7 @@ var myPOPdata3 =
       },
       "country": {
         "id": "IR",
-        "value": "Iran, Islamic Rep."
+        "value": "Iran"
       },
       "value": "78143644",
       "decimal": "0",
@@ -458,7 +458,7 @@ var myPOPdata3 =
       },
       "country": {
         "id": "KP",
-        "value": "Korea, Dem. People’s Rep."
+        "value": "North Korea"
       },
       "value": "25026772",
       "decimal": "0",
@@ -471,7 +471,7 @@ var myPOPdata3 =
       },
       "country": {
         "id": "KR",
-        "value": "Korea, Rep."
+        "value": "South Korea"
       },
       "value": "50423955",
       "decimal": "0",
