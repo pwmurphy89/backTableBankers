@@ -35,13 +35,19 @@ interactiveMap.controller('filterController', function($scope, $http, $routePara
 
 		// Lists countries with selected language
 		for(var i = 0; i < countries.length;i++){
-				var x = Object.getOwnPropertyNames(countries[i].languages);
-				if(x.indexOf($scope.selectedLanguage) > -1){
+					var x = Object.getOwnPropertyNames(countries[i].languages);
+					if(x.indexOf($scope.selectedLanguage) > -1){
+						// Gets Value of selected language in countries that have it
+						console.log(countries[i]);
+				    	var langPerc = countries[i].languages[$scope.selectedLanguage];
+				    	//if langPerc > 20{
+				    		//do this
+				    	
 
-					console.log(countries[i]);
-				}
 		}
 	}
+}
+
 
 
 	// findPopulation()

@@ -3,7 +3,7 @@ var languages = [];
 function getLanguageList(){
 	for (i=0; i<countryLangs.length; i++){
 		for (var key in countryLangs[i].languages){
-	 		console.log(key);
+	 		// console.log(key);
 	 		if (languages.indexOf(key) > -1){
 				// it's already in there, so don't add the language
 			} else {
@@ -14,7 +14,7 @@ function getLanguageList(){
 }
 
 getLanguageList();
-console.log(languages);
+// console.log(languages);
 
 // this array will become the master array that stores data on 250ish countries
 var countries = [];
@@ -41,7 +41,7 @@ function addCountries(popdata, gdpdata){
 			if (myCountry == countryLangs[j].name) {
 				// the country names match, so add the languages object
 				myLanguages = countryLangs[j].languages;
-				console.log(myLanguages);
+				// console.log(myLanguages);
 			}
 		}
 		countries.push(new Country(myCountry, myPop, myGDP, myLanguages));
@@ -55,4 +55,4 @@ addCountries(myPOPdata3, myGDPdata3);
 addCountries(myPOPdata4, myGDPdata4);
 addCountries(myPOPdata5, myGDPdata5);
 
-console.log(countries);
+// console.log(countries);
