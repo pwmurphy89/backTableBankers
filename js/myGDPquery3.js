@@ -302,7 +302,7 @@ var myGDPdata3 =
       },
       "country": {
         "id": "IR",
-        "value": "Iran, Islamic Rep."
+        "value": "Iran"
       },
       "value": "425326068422.881",
       "decimal": "0",

@@ -549,7 +549,7 @@ var myGDPdata4 =
       },
       "country": {
         "id": "RU",
-        "value": "Russian Federation"
+        "value": "Russia"
       },
       "value": "1860597922763.44",
       "decimal": "0",
