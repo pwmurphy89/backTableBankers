@@ -1,7 +1,38 @@
 
 interactiveMap.controller('filterController', function($scope, $http, $routeParams){
 
-	var map = new Datamap({
+	$scope.map = new Datamap({
+		element: document.getElementById('map'),
+		fills: {
+
+			defaultFill: '#ccc'
+		}
+	});
+
+	$scope.languages = languages;
+	$scope.countries = countries;
+
+	$scope.findLanguage =function(){
+
+
+		// Lists countries with selected language
+		for(var i = 0; i < countries.length;i++){
+				var x = Object.getOwnPropertyNames(countries[i].languages);
+				if(x.indexOf($scope.selectedLanguage) > -1){
+
+					console.log(countries[i].languages);
+					fillMap();
+				}
+		}
+	}
+
+	// findPopulation()
+
+	// findGdp()
+
+	function fillMap(){
+
+		var map = new Datamap({
 		element: document.getElementById('map'),
 		fills: {
 			HIGH: '#b80000',
@@ -26,26 +57,9 @@ interactiveMap.controller('filterController', function($scope, $http, $routePara
 		}
 	});
 
-	map.legend();
+		map.legend();
 
-	$scope.languages = languages;
-	$scope.countries = countries;
-
-	$scope.findLanguage =function(){
-
-		// Lists countries with selected language
-		for(var i = 0; i < countries.length;i++){
-				var x = Object.getOwnPropertyNames(countries[i].languages);
-				if(x.indexOf($scope.selectedLanguage) > -1){
-
-					console.log(countries[i]);
-				}
-		}
 	}
-
-	// findPopulation()
-
-	// findGdp()
 
 
 
