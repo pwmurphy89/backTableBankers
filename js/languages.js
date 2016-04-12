@@ -1,12 +1,14 @@
 var countryLangs = [
 	{
 		name: "China",
+		countryCode: "CHN",
 		languages: {
 			"Mandarin": 100
 		}
 	},	
 	{
 		name: "India",
+		countryCode: "IND",
 		languages: {
 			"Hindi": 100,
 			"English": 41
@@ -14,6 +16,7 @@ var countryLangs = [
 	},	
 	{
 		name: "United States",
+		countryCode: "USA",
 		languages: {
 			"English": 90,
 			"Spanish": 12,
@@ -22,6 +25,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Indonesia",
+		countryCode: "IDN",
 		languages: {
 			"Indonesian": 100,
 			"English": 12,
@@ -30,6 +34,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Brazil",
+		countryCode: "BRA",
 		languages: {
 			"Portuguese": 100,
 			"Spanish": 25,
@@ -39,6 +44,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Pakistan",
+		countryCode: "PAK",
 		languages: {
 			"Punjabi": 48,
 			"Arabic": 10,
@@ -48,6 +54,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Nigeria",
+		countryCode: "NGA",
 		languages: {
 			"English": 80,
 			"French": 30
@@ -55,6 +62,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Bangladesh",
+		countryCode: "BGD",
 		languages: {
 			"Bengali": 100,
 			"English": 5
@@ -62,12 +70,14 @@ var countryLangs = [
 	},	
 	{
 		name: "Russia",
+		countryCode: "RUS",
 		languages: {
 			"Russian": 100
 		}
 	},	
 	{
 		name: "Japan",
+		countryCode: "JPN",
 		languages: {
 			"Japanese": 100,
 			"English": 40
@@ -75,6 +85,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Mexico",
+		countryCode: "MEX",
 		languages: {
 			"Spanish": 93,
 			"English": 20
@@ -82,6 +93,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Philippines",
+		countryCode: "PHL",
 		languages: {
 			"Fillpino": 100,
 			"English": 20
@@ -89,6 +101,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Ethiopia",
+		countryCode: "ETH",
 		languages: {
 			"Oromiffa": 100,
 			"English": 10,
@@ -97,6 +110,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Vietnam",
+		countryCode: "VNM",
 		languages: {
 			"Vietnamese": 100,
 			"French": 20,
@@ -106,6 +120,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Egypt",
+		countryCode: "EGY",
 		languages: {
 			"Arabic": 80,
 			"English": 30,
@@ -114,6 +129,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Iran",
+		countryCode: "IRN",
 		languages: {
 			"Arabic": 70,
 			"Persian": 80
@@ -121,6 +137,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Germany",
+		countryCode: "DEU",
 		languages: {
 			"German": 100,
 			"English": 80,
@@ -131,6 +148,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Turkey",
+		countryCode: "TUR",
 		languages: {
 			"Turkish": 100,
 			"Arabic": 70,
@@ -138,12 +156,14 @@ var countryLangs = [
 	},	
 	{
 		name: "Cote d'Ivoire",
+		countryCode: "CIV",
 		languages: {
 			"French": 80,
 		}
 	},	
 	{
 		name: "Thailand",
+		countryCode: "THA",
 		languages: {
 			"Thai": 100,
 			"English": 30,
@@ -152,6 +172,7 @@ var countryLangs = [
 	},	
 	{
 		name: "France",
+		countryCode: "FRA",
 		languages: {
 			"French": 100,
 			"English": 60,
@@ -160,6 +181,7 @@ var countryLangs = [
 	},	
 	{
 		name: "United Kingdom",
+		countryCode: "GBR",
 		languages: {
 			"English": 100,
 			"French": 20
@@ -167,6 +189,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Italy",
+		countryCode: "ITA",
 		languages: {
 			"Italian": 100,
 			"French": 20,
@@ -175,13 +198,15 @@ var countryLangs = [
 		}
 	},	
 	{
-		name: "Burma",
+		name: "Myanmar",
+		countryCode: "MMR",
 		languages: {
 			"Burmese": 100
 		}
 	},	
 	{
 		name: "South Africa",
+		countryCode: "ZAF",
 		languages: {
 			"Afrikaans": 50,
 			"English": 70
@@ -189,6 +214,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Tanzania",
+		countryCode: "TZA",
 		languages: {
 			"Swahili": 80,
 			"English": 60,
@@ -197,6 +223,7 @@ var countryLangs = [
 	},	
 	{
 		name: "South Korea",
+		countryCode: "KOR",
 		languages: {
 			"Korean": 100,
 			"English": 50
@@ -204,6 +231,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Spain",
+		countryCode: "ESP",
 		languages: {
 			"Spanish": 100,
 			"French": 10,
@@ -213,6 +241,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Colombia",
+		countryCode: "COL",
 		languages: {
 			"Spanish": 100,
 			"English": 20
@@ -220,6 +249,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Kenya",
+		countryCode: "KEN",
 		languages: {
 			"English": 70,
 			"Swahili": 20
@@ -227,6 +257,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Ukraine",
+		countryCode: "UKR",
 		languages: {
 			"Ukranian": 90,
 			"Russian": 20,
@@ -235,6 +266,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Argentina",
+		countryCode: "ARG",
 		languages: {
 			"Spanish": 100,
 			"English": 50,
@@ -244,6 +276,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Algeria",
+		countryCode: "DZA",
 		languages: {
 			"Arabic": 100,
 			"French": 60
@@ -251,6 +284,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Poland",
+		countryCode: "POL",
 		languages: {
 			"Polish": 100,
 			"German": 20,
@@ -260,6 +294,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Uganda",
+		countryCode: "UGA",
 		languages: {
 			"Swahili": 50,
 			"English": 80,
@@ -268,6 +303,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Iraq",
+		countryCode: "IRQ",
 		languages: {
 			"Arabic": 80,
 			"Kurdish": 20
@@ -275,6 +311,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Sudan",
+		countryCode: "SDN",
 		languages: {
 			"Arabic": 80,
 			"English": 60
@@ -282,6 +319,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Canada",
+		countryCode: "CAN",
 		languages: {
 			"English": 80,
 			"French": 22,
@@ -290,6 +328,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Morocco",
+		countryCode: "MAR",
 		languages: {
 			"Arabic": 100,
 			"French": 60,
@@ -298,6 +337,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Afghanistan",
+		countryCode: "AFG",
 		languages: {
 			"Arabic": 100,
 			"Turkish": 20
@@ -305,6 +345,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Nepal",
+		countryCode: "NPL",
 		languages: {
 			"Nepali": 50,
 			"Arabic": 10,
@@ -312,6 +353,7 @@ var countryLangs = [
 	},	
 	{
 		name: "Malaysia",
+		countryCode: "MYS",
 		languages: {
 			"Malay": 90,
 			"English": 40,
@@ -321,18 +363,21 @@ var countryLangs = [
 	},	
 	{
 		name: "Peru",
+		countryCode: "PER",
 		languages: {
 			"Spanish": 85
 		}
 	},	
 	{
 		name: "Venezuela",
+		countryCode: "VEN",
 		languages: {
 			"Spanish": 100
 		}
 	},	
 	{
 		name: "Uzbekistan",
+		countryCode: "UZB",
 		languages: {
 			"Uzbek": 100,
 			"Russian": 14
@@ -340,32 +385,38 @@ var countryLangs = [
 	},	
 	{
 		name: "Saudi Arabia",
+		countryCode: "SAU",
 		languages: {
 			"Arabic": 100
 		}
 	},	
 	{
 		name: "Yemen",
+		countryCode: "YEM",
 		languages: {
 			"Arabic": 100
 		}
 	},	
 	{
 		name: "Ghana",
+		countryCode: "GHA",
 		languages: {
 			"English": 40
 		}
 	},	
 	{
 		name: "Mozambique",
+		countryCode: "MOZ",
 		languages: {
 			"Portuguese": 11,
 		}
 	},	
 	{
 		name: "North Korea",
+		countryCode: "PRK",
 		languages: {
 			"Korean": 100
 		}
 	}
 ];
+

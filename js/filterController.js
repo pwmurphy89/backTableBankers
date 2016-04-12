@@ -1,9 +1,6 @@
 
 interactiveMap.controller('filterController', function($scope, $http, $routeParams){
 
-	$scope.languages = languages;
-	$scope.countries = countries;
-
 	var map = new Datamap({
 		element: document.getElementById('map'),
 		fills: {
@@ -31,8 +28,20 @@ interactiveMap.controller('filterController', function($scope, $http, $routePara
 
 	map.legend();
 
+	$scope.languages = languages;
+	$scope.countries = countries;
 
-	// findLanguage()
+	$scope.findLanguage =function(){
+
+		// Lists countries with selected language
+		for(var i = 0; i < countries.length;i++){
+				var x = Object.getOwnPropertyNames(countries[i].languages);
+				if(x.indexOf($scope.selectedLanguage) > -1){
+
+					console.log(countries[i]);
+				}
+		}
+	}
 
 	// findPopulation()
 
