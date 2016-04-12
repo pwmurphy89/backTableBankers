@@ -549,7 +549,7 @@ var myGDPdata5 =
       },
       "country": {
         "id": "VE",
-        "value": "Venezuela, RB"
+        "value": "Venezuela"
       },
       "value": null,
       "decimal": "0",
