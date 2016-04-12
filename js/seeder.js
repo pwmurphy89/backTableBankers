@@ -1,3 +1,21 @@
+// get a list of languages from languages.js
+var languages = [];
+function getLanguageList(){
+	for (i=0; i<countryLangs.length; i++){
+		for (var key in countryLangs[i].languages){
+	 		console.log(key);
+	 		if (languages.indexOf(key) > -1){
+				// it's already in there, so don't add the language
+			} else {
+				languages.push(key);
+			}
+	 	}
+	}
+}
+
+getLanguageList();
+console.log(languages);
+
 // this array will become the master array that stores data on 250ish countries
 var countries = [];
 // this constructor defines the properties of the country object
@@ -8,7 +26,7 @@ var Country = function(name, totalPop, gdp, languages){
 	this.languages = languages;
 }
 
-// this function 
+// this function adds countries to the master array
 function addCountries(popdata, gdpdata){
 	var popData = popdata[1];
 	var gdpData = gdpdata[1];
