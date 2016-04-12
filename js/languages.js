@@ -417,6 +417,116 @@ var countryLangs = [
 		languages: {
 			"Korean": 100
 		}
+	},
+	{
+		name: "Guatemala",
+		countryCode: "GTM",
+		languages: {
+			"Spanish": 60
+		}
+	},
+	{
+		name: "Honduras",
+		countryCode: "HND",
+		languages: {
+			"Spanish": 80
+		}
+	},
+	{
+		name: "Cuba",
+		countryCode: "CUB",
+		languages: {
+			"Spanish": 100
+		}
+	},
+	{
+		name: "Nicaragua",
+		countryCode: "NIC",
+		languages: {
+			"Spanish": 95,
+			"English": 5
+		}
+	},
+	{
+		name: "Costa Rica",
+		countryCode: "CRI",
+		languages: {
+			"English": 30,
+			"Spanish": 100
+		}
+	},
+	{
+		name: "Panama",
+		countryCode: "PAN",
+		languages: {
+			"Spanish": 100,
+			"English": 5,
+			"French": 5
+		}
+	},
+	{
+		name: "Ecuador",
+		countryCode: "ECU",
+		languages: {
+			"Spanish": 93
+		}
+	},
+	{
+		name: "Guyana",
+		countryCode: "GUY",
+		languages: {
+			"English": 80,
+			"Spanish": 40
+		}
+	},
+	{
+		name: "Suriname",
+		countryCode: "SUR",
+		languages: {
+			"Dutch": 80,
+			"English": 70,
+			"French": 30,
+			"Spanish": 30
+		}
+	},
+	{
+		name: "French Guiana",
+		countryCode: "GUF",
+		languages: {
+			"French": 80,
+			"English": 20,
+			"Spanish": 30
+		}
+	},
+	{
+		name: "Bolivia",
+		countryCode: "BOL",
+		languages: {
+			"Spanish": 60
+		}
+	},
+	{
+		name: "Paraguay",
+		countryCode: "PRY",
+		languages: {
+			"Spanish": 100
+		}
+	},
+	{
+		name: "Uruguay",
+		countryCode: "URY",
+		languages: {
+			"Spanish": 80,
+			"Portuguese": 10
+		}
+	},
+	{
+		name: "Chile",
+		countryCode: "CHL",
+		languages: {
+			"Spanish": 100,
+			"English": 10
+		}
 	}
 ];
 
