@@ -1,4 +1,6 @@
+// this array will become the master array that stores data on 250ish countries
 var countries = [];
+// this constructor defines the properties of the country object
 var Country = function(name, totalPop, gdp, languages){
 	this.name = name;
 	this.totalPop = totalPop;
@@ -6,6 +8,7 @@ var Country = function(name, totalPop, gdp, languages){
 	this.languages = languages;
 }
 
+// this function 
 function addCountries(popdata, gdpdata){
 	var popData = popdata[1];
 	var gdpData = gdpdata[1];
@@ -13,29 +16,25 @@ function addCountries(popdata, gdpdata){
 		var myCountry = popData[i].country.value;
 		var myPop = popData[i].value;
 		var myGDP = gdpData[i].value;
-		var myLanguages = [];
-		for (j=0;j<langArray.length;j++){
-			if (myCountry == langArray[j].name) {
-				// there's a match; add languages to the master array
-				myLanguages = langArray[j].languages;
+		var myLanguages = {};
+		// get languages data from countries_languages.js
+		// for each country, add the language object if data are available
+		for (j=0;j<countryLangs.length;j++){
+			if (myCountry == countryLangs[j].name) {
+				// the country names match, so add the languages object
+				myLanguages = countryLangs[j].languages;
+				console.log(myLanguages);
 			}
 		}
 		countries.push(new Country(myCountry, myPop, myGDP, myLanguages));
 	}
 }
 
+// call the function, passing data from the myGDPqueryN.js and myPOPqueryN.js files
 addCountries(myPOPdata1, myGDPdata1);
 addCountries(myPOPdata2, myGDPdata2);
 addCountries(myPOPdata3, myGDPdata3);
 addCountries(myPOPdata4, myGDPdata4);
 addCountries(myPOPdata5, myGDPdata5);
-
-/* for (i=0;i<langArray.length;i++){
-	var temp = langArray[i].languages;
-	for (j=0;j<popData.length;j++){
-		if (countries[i].name == )
-		countries[ ].languages = temp;
-	}
-} */
 
 console.log(countries);
