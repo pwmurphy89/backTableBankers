@@ -1,22 +1,21 @@
 var interactiveMap = angular.module('interactiveMap', ['ngRoute']);
 
-
 interactiveMap.factory('languageService', function() {
 
-    var currentLanguage = ""
+    var currentLanguage = "";
    
     function set(language) {
         currentLanguage = language;
-    }
+    };
 
     function get() {
         return currentLanguage;
-    }
+    };
 
     return {
         set: set,
         get: get
-    }
+    };
 });
 
 interactiveMap.run( function($rootScope, $location, $routeParams, $location, languageService) {
@@ -26,7 +25,7 @@ interactiveMap.run( function($rootScope, $location, $routeParams, $location, lan
     function(a){
         if(a !== '/#'){
             console.log('url has changed: ' + a);
-        }
+        };
     });
 });
 
@@ -43,5 +42,4 @@ interactiveMap.config(function($routeProvider){
     $routeProvider.otherwise({
         redirectoTo: '/#'
     });
-
 });
