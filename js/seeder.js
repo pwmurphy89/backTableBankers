@@ -43,11 +43,8 @@ function addCountries(popdata, gdpdata){
 			if (myCountry == countryLangs[j].name) {
 				// the country names match, so add the languages object
 				myLanguages = countryLangs[j].languages;
-<<<<<<< HEAD
-				// console.log(myLanguages);
-=======
+
 				myCountryCode = countryLangs[j].countryCode;
->>>>>>> 869504f8b887cf466eaacce6d8b5d58340c75fd1
 			}
 		}
 		countries.push(new Country(myCountry, myPop, myGDP, myLanguages, myCountryCode));

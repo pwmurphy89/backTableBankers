@@ -29,6 +29,7 @@ interactiveMap.controller('filterController', function($scope, $http, $routePara
 	map.legend();
 
 	$scope.languages = languages;
+	console.log($scope.languages);
 	$scope.countries = countries;
 
 	$scope.findLanguage =function(){
