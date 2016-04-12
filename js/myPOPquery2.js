@@ -549,7 +549,7 @@ var myPOPdata2 =
       },
       "country": {
         "id": "EG",
-        "value": "Egypt, Arab Rep."
+        "value": "Egypt"
       },
       "value": "89579670",
       "decimal": "0",

@@ -601,7 +601,7 @@ var myPOPdata5 =
       },
       "country": {
         "id": "YE",
-        "value": "Yemen, Rep."
+        "value": "Yemen"
       },
       "value": "26183676",
       "decimal": "0",
