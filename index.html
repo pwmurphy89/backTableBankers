@@ -26,9 +26,11 @@
 <body>
 
 <div id="search-panel" ng-controller="filterController">
+    <select id="country-option" ng-change="findCountry()" ng-model="selectedCountry" ng-options="country.name for country in countries">
+        <option value="" selected="selected">Choose a country</option>
+    </select>
     <select id="language-option" ng-change="findLanguage()" ng-model="selectedLanguage" ng-options="language for language in languages">
         <option value="" selected="selected">Choose a language</option>
-
     </select>
     <select id="population-option" ng-change="findPopulation()" ng-model="selectedPopulation" ng-options="population for population in populations">
         <option value="" selected="selected">Choose a population</option>
