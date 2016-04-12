@@ -19,11 +19,12 @@ console.log(languages);
 // this array will become the master array that stores data on 250ish countries
 var countries = [];
 // this constructor defines the properties of the country object
-var Country = function(name, totalPop, gdp, languages){
+var Country = function(name, totalPop, gdp, languages, countrycode){
 	this.name = name;
 	this.totalPop = totalPop;
 	this.gdp = gdp;
 	this.languages = languages;
+	this.countryCode = countrycode;
 }
 
 // this function adds countries to the master array
@@ -35,16 +36,17 @@ function addCountries(popdata, gdpdata){
 		var myPop = popData[i].value;
 		var myGDP = gdpData[i].value;
 		var myLanguages = {};
+		var myCountryCode = '';
 		// get languages data from countries_languages.js
 		// for each country, add the language object if data are available
 		for (j=0;j<countryLangs.length;j++){
 			if (myCountry == countryLangs[j].name) {
 				// the country names match, so add the languages object
 				myLanguages = countryLangs[j].languages;
-				console.log(myLanguages);
+				myCountryCode = countryLangs[j].countryCode;
 			}
 		}
-		countries.push(new Country(myCountry, myPop, myGDP, myLanguages));
+		countries.push(new Country(myCountry, myPop, myGDP, myLanguages, myCountryCode));
 	}
 }
 
