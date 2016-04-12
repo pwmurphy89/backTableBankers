@@ -29,7 +29,7 @@ interactiveMap.controller('filterController', function($scope, $http, $routePara
 	map.legend();
 
 	$scope.languages = languages;
-
+	$scope.countries = countries;
 	// findLanguage()
 
 	// findPopulation()

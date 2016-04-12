@@ -1,5 +1,3 @@
-var languages = [ "Mandarin", "Spanish", "English", "Hindi", "Arabic", "Portuguese", "Russian", "Japanese", "French", "Indonesian" ]; 
-
 var countryLangs = [
 	{
 		name: "China",
@@ -422,14 +420,3 @@ var countryLangs = [
 	}
 ];
 
-for(var i = 0; i < countryLangs.length; i++){
- for(var j = 0; j < countryLangs[i].languages.length; j++){
- 	console.log(countryLangs[i].languages[j]);
- }
-
-
-
-
-
-
-}
