@@ -53,23 +53,23 @@ interactiveMap.run( function($rootScope, $location, $routeParams, $location, map
 });
 
 interactiveMap.config(function($routeProvider){
-    $routeProvider.when('/#',{
+    $routeProvider.when('/',{
         templateUrl: 'map.html',
         controller: 'homeMapController'
     });
-    $routeProvider.when('/:language*',{
+    $routeProvider.when('/:language',{
         templateUrl: 'map.html',
         controller: 'mapsController'
     });
-    $routeProvider.when('/population:popId*',{
-        templateUrl: 'map.html',
-        controller: 'mapsController'
-    });
-    $routeProvider.when('/gdp:gdpId*',{
-        templateUrl: 'map.html',
-        controller: 'mapsController'
-    });
+    // $routeProvider.when('/population:popId*',{
+    //     templateUrl: 'map.html',
+    //     controller: 'mapsController'
+    // });
+    // $routeProvider.when('/gdp:gdpId*',{
+    //     templateUrl: 'map.html',
+    //     controller: 'mapsController'
+    // });
     $routeProvider.otherwise({
-        redirectoTo: '/#'
+        redirectoTo: '/'
     });
 });
