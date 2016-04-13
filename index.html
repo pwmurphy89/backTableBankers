@@ -10,8 +10,10 @@
 	<script type="text/javascript" src="js/datamaps.js"></script>
     <script type="text/javascript" src="js/map.module.js"></script>
     <script type="text/javascript" src="js/filterController.js"></script> 
-    <script type="text/javascript" src="js/homeMapController.js"></script> 
+    <script type="text/javascript" src="js/homeMapController.js"></script>
     <script type="text/javascript" src="js/languageController.js"></script>
+    <script type="text/javascript" src="js/gdpController.js"></script>
+    <script type="text/javascript" src="js/popController.js"></script> 
     <script type="text/javascript" src="js/myPOPquery1.js"></script>
     <script type="text/javascript" src="js/myGDPquery1.js"></script>
     <script type="text/javascript" src="js/myPOPquery2.js"></script>
@@ -34,10 +36,10 @@
     <select id="language-option" ng-change="findLanguage()" ng-model="selectedLanguage" ng-options="language for language in languages">
         <option value="" selected="selected">Choose a language</option>
     </select>
-    <select id="population-option" ng-change="findPopulation()" ng-model="selectedPopulation" ng-options="population for population in populations">
-        <option value="" selected="selected">Choose a population</option>
+    <select id="population-option" ng-change="findPopulation()" ng-model="selectedPopulation" ng-options="myPop.label for myPop in popRanges">
+        <option value="" selected="selected">Choose a population size</option>
     </select>
-    <select id="gdp-option" ng-change="findGdp()" ng-model="selectedGdp" ng-options="gdp for gdp in gdps">
+    <select id="gdp-option" ng-change="findGdp()" ng-model="selectedGDP" ng-options="gdp.label for gdp in gdpRanges">
         <option value="" selected="selected">Choose a GDP amount</option>
     </select>
     <div id="reset-map-div">

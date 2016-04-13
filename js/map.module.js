@@ -18,7 +18,43 @@ interactiveMap.factory('languageService', function() {
     };
 });
 
-interactiveMap.run( function($rootScope, $location, $routeParams, $location, languageService) {
+interactiveMap.factory('popService', function() {
+
+    var currentPop = "";
+   
+    function set(population) {
+        currentPop = population;
+    };
+
+    function get() {
+        return currentPop;
+    };
+
+    return {
+        set: set,
+        get: get
+    };
+});
+
+interactiveMap.factory('gdpService', function() {
+
+    var currentGDP = "";
+   
+    function set(gdp) {
+        currentGDP = gdp;
+    };
+
+    function get() {
+        return currentGDP;
+    };
+
+    return {
+        set: set,
+        get: get
+    };
+});
+
+interactiveMap.run( function($rootScope, $location, $routeParams, $location, languageService, popService, gdpService) {
     $rootScope.$watch(function() {
         return $location.path();
     },
@@ -38,6 +74,14 @@ interactiveMap.config(function($routeProvider){
     $routeProvider.when('/:language',{
         templateUrl: 'map.html',
         controller: 'languageController'
+    });
+    $routeProvider.when('/gdp/:gdp',{
+        templateUrl: 'map.html',
+        controller: 'gdpController'
+    });
+    $routeProvider.when('/pop/:population',{
+        templateUrl: 'map.html',
+        controller: 'popController'
     });
     $routeProvider.otherwise({
         redirectoTo: '/#'
