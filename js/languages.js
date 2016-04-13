@@ -340,7 +340,8 @@ var countryLangs = [
 		countryCode: "AFG",
 		languages: {
 			"Arabic": 100,
-			"Turkish": 20
+			"Turkish": 20,
+			"Persian": 20
 		}
 	},	
 	{
@@ -526,6 +527,144 @@ var countryLangs = [
 		languages: {
 			"Spanish": 100,
 			"English": 10
+		}
+	},
+	{
+		name: "New Zealand",
+		countryCode: "NZL",
+		languages: {
+			"English": 89
+		}
+	},
+	{
+		name: "Norway",
+		countryCode: "NOR",
+		languages: {
+			"Norwegian": 100,
+			"Swedish": 20,
+			"English": 60
+		}
+	},
+	{
+		name: "Oman",
+		countryCode: "OMN",
+		languages: {
+			"Arabic": 100,
+			"English": 10
+		}
+	},
+	{
+		name: "Portugal",
+		countryCode: "PRT",
+		languages: {
+			"Portuguese": 100,
+			"Spanish": 10,
+			"English": 20
+		}
+	},
+	{
+		name: "Puerto Rico",
+		countryCode: "PRI",
+		languages: {
+			"Spanish": 100,
+			"English": 70 
+		}
+	},
+	{
+		name: "Qatar",
+		countryCode: "QAT",
+		languages: {
+			"Arabic": 100,
+			"English": 30
+		}
+	},
+	{
+		name: "Romania",
+		countryCode: "ROU",
+		languages: {
+			"Romanian": 85,
+			"Hungarian": 10
+		}
+	},
+	{
+		name: "Serbia",
+		countryCode: "SRB",
+		languages: {
+			"Serbian": 88,
+			"Hungarian": 5,
+			"Romanian": 5
+		}
+	},
+	{
+		name: "Slovenia",
+		countryCode: "SVN",
+		languages: {
+			"Serbian": 50,
+			"Hungarian": 50,
+			"Romanian": 20 
+		}
+	},
+	{
+		name: "Sri Lanka",
+		countryCode: "LKA",
+		languages: {
+			"English": 10
+		}
+	},
+	{
+		name: "Sweden",
+		countryCode: "SWE",
+		languages: {
+			"Swedish": 100,
+			"Norwegian": 20,
+			"English": 60 
+		}
+	},
+	{
+		name: "Switzerland",
+		countryCode: "CHE",
+		languages: {
+			"German": 65,
+			"French": 22,
+			"Italian": 10,
+			"English": 10,
+			"Romanian": 5,
+			"Portuguese": 5
+		}
+	},
+		{
+		name: "Syrian Arab Republic",
+		countryCode: "SYR",
+		languages: {
+			"Arabic": 100,
+			"Kurdish": 20,
+			"French": 10, 
+		}
+	},
+	{
+		name: "Tajikistan",
+		countryCode: "TJK",
+		languages: {
+			"Russian": 60,
+			"Turkish": 10
+		}
+	},
+	{
+		name: "Turkmenistan",
+		countryCode: "TKM",
+		languages: {
+			"Russian": 25,
+			"Turkish": 10
+		}
+	},
+		{
+		name: "United Arab Emirates",
+		countryCode: "ARE",
+		languages: {
+			"Arabic": 100,
+			"English": 15,
+			"Hindi": 10,
+			"Persian": 30 
 		}
 	}
 ];
