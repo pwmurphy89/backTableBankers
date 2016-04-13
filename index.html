@@ -36,7 +36,7 @@
     <select id="language-option" ng-change="findLanguage()" ng-model="selectedLanguage" ng-options="language for language in languages">
         <option value="" selected="selected">Choose a language</option>
     </select>
-    <select id="population-option" ng-change="findPopulation()" ng-model="selectedPopulation" ng-options="myPop.label for myPop in popRanges">
+    <select id="population-option" ng-change="findPopulation()" ng-model="selectedPopulation" ng-options="myPop.label for myPop in popRanges track by $index">
         <option value="" selected="selected">Choose a population size</option>
     </select>
     <select id="gdp-option" ng-change="findGdp()" ng-model="selectedGDP" ng-options="gdp.label for gdp in gdpRanges">

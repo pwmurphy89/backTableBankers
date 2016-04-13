@@ -64,12 +64,12 @@ interactiveMap.controller('filterController', function($scope, $http, $routePara
 
 	$scope.findPopulation = function(){
 		popService.set($scope.selectedPopulation);
-		$location.path($scope.selectedPopulation);
+		$location.path('/pop/' + $scope.selectedPopulation);
 	}
 
 	$scope.findGdp = function(){
 		gdpService.set($scope.selectedGDP);
-		$location.path($scope.selectedGDP);
+		$location.path('/gdp/' + $scope.selectedGDP);
 	}
 
 }); 
