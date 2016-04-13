@@ -120,7 +120,7 @@ var myGDPdata2 =
       },
       "country": {
         "id": "BA",
-        "value": "Bosnia and Herzegovina"
+        "value": "Bosnia"
       },
       "value": "18521475376.4754",
       "decimal": "0",
@@ -367,7 +367,7 @@ var myGDPdata2 =
       },
       "country": {
         "id": "CD",
-        "value": "Congo, Dem. Rep."
+        "value": "Congo"
       },
       "value": "33121070959.3936",
       "decimal": "0",

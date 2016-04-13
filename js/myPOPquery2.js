@@ -120,7 +120,7 @@ var myPOPdata2 =
       },
       "country": {
         "id": "BA",
-        "value": "Bosnia and Herzegovina"
+        "value": "Bosnia"
       },
       "value": "3817554",
       "decimal": "0",
@@ -367,7 +367,7 @@ var myPOPdata2 =
       },
       "country": {
         "id": "CD",
-        "value": "Congo, Dem. Rep."
+        "value": "Congo"
       },
       "value": "74877030",
       "decimal": "0",

@@ -276,7 +276,7 @@ var myPOPdata5 =
       },
       "country": {
         "id": "SY",
-        "value": "Syrian Arab Republic"
+        "value": "Syria"
       },
       "value": "22157800",
       "decimal": "0",

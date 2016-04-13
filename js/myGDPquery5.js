@@ -276,7 +276,7 @@ var myGDPdata5 =
       },
       "country": {
         "id": "SY",
-        "value": "Syrian Arab Republic"
+        "value": "Syria"
       },
       "value": null,
       "decimal": "0",
