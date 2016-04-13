@@ -11,6 +11,7 @@ function getLanguageList(){
 			}
 	 	}
 	}
+	languages.sort();
 }
 
 getLanguageList();
