@@ -940,7 +940,7 @@ var countryLangs = [
 	},
 	{
 		name: "Mongolia",
-		countryCode: "",
+		countryCode: "MNG",
 		languages: {
 			"Mongolian": 100,
 			"Russina": 80,
@@ -950,7 +950,7 @@ var countryLangs = [
 	},
 	{
 		name: "Montenegro",
-		countryCode: "MNG",
+		countryCode: "MNE",
 		languages: {
 			"Serbian": 80,
 			"Bosnian": 80
