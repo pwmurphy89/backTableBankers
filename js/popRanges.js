@@ -22,6 +22,6 @@ var popRanges = [
 	{
 		id: 5,
 		label: "over 1 billion",
-		value: 10000000000
+		value: 1000000001
 	}
 ];
