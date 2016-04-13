@@ -1,4 +1,4 @@
-interactiveMap.controller('filterController', function($scope, $http, $routeParams, $location, popService, gdpService, languageService){
+interactiveMap.controller('filterController', function($scope, $http, $routeParams, $location, mapService){
 
 	$scope.languages = languages;
 	$scope.countries = countries;
@@ -58,18 +58,37 @@ interactiveMap.controller('filterController', function($scope, $http, $routePara
 	];
 
 	$scope.findLanguage = function(){
-		languageService.set($scope.selectedLanguage);
-		$location.path($scope.selectedLanguage);
+		mapService.setLanguage($scope.selectedLanguage);
+		var currLang = mapService.getLanguage();
+		var currGDP = mapService.getGDP();
+		var currPop = mapService.getPop();
+		/* if (currGDP == '' && currPop == '') {
+			$location.path(currLang);
+		} else if (currGDP == '') {
+			$location.path(currLang + '/' + currPop);
+		} else {
+			$location.path(currLang + '/' + currPop + '/' + currGDP);
+		} */
+		var myPath = $location.path();
+		$location.path('/lang' + currLang);
 	}
 
 	$scope.findPopulation = function(){
-		popService.set($scope.selectedPopulation);
-		$location.path('/pop/' + $scope.selectedPopulation);
+		mapService.setPop($scope.selectedPopulation.id);
+		var currPop = mapService.getPop();
+		var currGDP = mapService.getGDP();
+		var currLang = mapService.getLanguage();
+		var myPath = $location.path();
+		$location.path('/population' + currPop);
 	}
 
 	$scope.findGdp = function(){
-		gdpService.set($scope.selectedGDP);
-		$location.path('/gdp/' + $scope.selectedGDP);
+		mapService.setGDP($scope.selectedGDP.id);
+		var currGDP = mapService.getGDP();
+		var currLang = mapService.getLanguage();
+		var currPop = mapService.getPop();
+		var myPath = $location.path();
+		$location.path('/gdp' + currGDP);
 	}
 
 }); 

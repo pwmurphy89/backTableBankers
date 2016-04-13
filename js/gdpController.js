@@ -1,8 +1,8 @@
-interactiveMap.controller('gdpController', function($scope, $http, $routeParams, $location, gdpService){
+interactiveMap.controller('gdpController', function($scope, $http, $routeParams, $location, mapService){
 
 	console.log("that");
 
-	var gdp = $routeParams.gdp;
+	var gdp = $routeParams.gdpId;
 
 	$scope.countries = countries;
 
@@ -39,7 +39,7 @@ interactiveMap.controller('gdpController', function($scope, $http, $routeParams,
 		data
 	});
 
-	map.updateChoropleth(data);
+	//map.updateChoropleth(data);
 	map.legend();
 	
 });

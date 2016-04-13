@@ -1,60 +1,52 @@
 var interactiveMap = angular.module('interactiveMap', ['ngRoute']);
 
-interactiveMap.factory('languageService', function() {
+interactiveMap.factory('mapService', function(){
+    // get all variables and return the map
 
-    var currentLanguage = "";
-   
-    function set(language) {
+    var currentLanguage = '';
+    var currentPop = '';
+    var currentGDP = '';
+
+    function setLanguage(language){
         currentLanguage = language;
-    };
+    }
 
-    function get() {
+    function getLanguage(){
         return currentLanguage;
-    };
+    }
 
-    return {
-        set: set,
-        get: get
-    };
-});
-
-interactiveMap.factory('popService', function() {
-
-    var currentPop = "";
-   
-    function set(population) {
+    function setPop(population){
         currentPop = population;
-    };
+    }
 
-    function get() {
+    function getPop(){
         return currentPop;
-    };
+    }
 
-    return {
-        set: set,
-        get: get
-    };
-});
-
-interactiveMap.factory('gdpService', function() {
-
-    var currentGDP = "";
-   
-    function set(gdp) {
+    function setGDP(gdp){
         currentGDP = gdp;
-    };
+    }
 
-    function get() {
+    function getGDP(){
         return currentGDP;
-    };
+    }
+
+    /* function getMap(){
+        // take local variables and run map
+        return 'mapStuff';
+    } */
 
     return {
-        set: set,
-        get: get
-    };
+        setLanguage: setLanguage,
+        getLanguage: getLanguage,
+        setPop: setPop,
+        getPop: getPop,
+        setGDP: setGDP,
+        getGDP: getGDP
+    }
 });
 
-interactiveMap.run( function($rootScope, $location, $routeParams, $location, languageService, popService, gdpService) {
+interactiveMap.run( function($rootScope, $location, $routeParams, $location, mapService) {
     $rootScope.$watch(function() {
         return $location.path();
     },
@@ -66,22 +58,21 @@ interactiveMap.run( function($rootScope, $location, $routeParams, $location, lan
 });
 
 interactiveMap.config(function($routeProvider){
-
     $routeProvider.when('/#',{
         templateUrl: 'map.html',
         controller: 'homeMapController'
     });
-    $routeProvider.when('/:language',{
+    $routeProvider.when('/lang:language*',{
         templateUrl: 'map.html',
         controller: 'languageController'
     });
-    $routeProvider.when('/gdp/:gdp',{
-        templateUrl: 'map.html',
-        controller: 'gdpController'
-    });
-    $routeProvider.when('/pop/:population',{
+    $routeProvider.when('/lang:language/population:popId*',{
         templateUrl: 'map.html',
         controller: 'popController'
+    });
+    $routeProvider.when('/lang:language/population:popId/gdp:gdpId',{
+        templateUrl: 'map.html',
+        controller: 'gdpController'
     });
     $routeProvider.otherwise({
         redirectoTo: '/#'

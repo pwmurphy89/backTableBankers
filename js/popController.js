@@ -1,10 +1,37 @@
-interactiveMap.controller('popController', function($scope, $http, $routeParams, $location, popService){
+interactiveMap.controller('popController', function($scope, $http, $routeParams, $location, mapService){
 
 	console.log("the other");
 
-	var popRange = $routeParams.population;
+	var myPopId = $routeParams.popId;
 
 	$scope.countries = countries;
+
+	var popRanges = [
+		{
+			id: 1,
+			label: "less than 1 million",
+			value: 1000000
+		},
+		{
+			id: 2,
+			label: "1 -- 10 million",
+			value: 10000000
+		},
+		{
+			id: 3,
+			label: "10 -- 100 million",
+			value: 100000000
+		},
+		{
+			id: 4,
+			label: "100 million -- 1 billion",
+			value: 100000000
+		},
+		{
+			id: 5,
+			label: "over 1 billion",
+			value: 1000000000
+		}];
 
 	data = {};
 
@@ -12,7 +39,8 @@ interactiveMap.controller('popController', function($scope, $http, $routeParams,
 	for(var i = 0; i < countries.length; i++){
 		data[countries[i].countryCode] = {fillKey: "defaultFill"};
 		var myPop = countries[i].totalPop;
-		// need to add filter based on routeParams value (popRange)
+		// need to add filter based on routeParams value (myPopId)
+
 		if (myPop < popRanges[0].value){
 			data[countries[i].countryCode] = {fillKey: "LOW"};
 		}else if(myPop < popRanges[1].value){
@@ -21,7 +49,7 @@ interactiveMap.controller('popController', function($scope, $http, $routeParams,
 			data[countries[i].countryCode] = {fillKey: "MEDIUM"};
 		}else if(myPop < popRanges[3].value){
 			data[countries[i].countryCode] = {fillKey: "MEDIUM-HIGH"};
-		}else if(myPop < popRanges[4].value){
+		}else {
 			data[countries[i].countryCode] = {fillKey: "HIGH"};
 		}    	
 	}	
@@ -39,7 +67,7 @@ interactiveMap.controller('popController', function($scope, $http, $routeParams,
 		data
 	});
 
-	map.updateChoropleth(data);
+	//map.updateChoropleth(data);
 	map.legend();
 
 });

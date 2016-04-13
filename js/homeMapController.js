@@ -1,4 +1,4 @@
-interactiveMap.controller('homeMapController', function($scope, $http, $routeParams, $location, languageService){
+interactiveMap.controller('homeMapController', function($scope, $http, $routeParams, $location, mapService){
 
 	console.log("this");
 

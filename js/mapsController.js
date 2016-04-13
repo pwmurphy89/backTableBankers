@@ -1,6 +1,10 @@
-interactiveMap.controller('languageController', function($scope, $http, $routeParams, $location, mapService){
-
+interactiveMap.controller('mapsController', function($scope, $http, $routeParams, $location, mapService){
+	//get stuff from routeParams
 	language = $routeParams.language;
+	//validate variables from routeParams
+
+	//decide what to filter based on what's in routeParams
+
 
 	$scope.languages = languages;
 	$scope.countries = countries;
