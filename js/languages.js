@@ -827,14 +827,13 @@ var countryLangs = [
 		name: "Greece",
 		countryCode: "GRC",
 		languages: {
-			"Greek": 100,
+			"Greek": 100
 		}
 	},
 	{
 		name: "Greenland",
 		countryCode: "GRL",
 		languages: {
-			"Greenlandic": 100,
 			"Danish": 80,
 			"English": 20
 		}
@@ -885,7 +884,7 @@ var countryLangs = [
 	},
 	{
 		name: "Jamaica",
-		countryCode: "JAM"
+		countryCode: "JAM",
 		languages: {
 			"English": 100
 		}
@@ -907,7 +906,7 @@ var countryLangs = [
 		}
 	},
 	{
-		name: "Kuwait":
+		name: "Kuwait",
 		countryCode: "KWT",
 		languages: {
 			"Arabic": 100,
@@ -943,7 +942,7 @@ var countryLangs = [
 		countryCode: "MNG",
 		languages: {
 			"Mongolian": 100,
-			"Russina": 80,
+			"Russian": 80,
 			"English": 40,
 			"Chinese": 20
 		}
