@@ -31,11 +31,6 @@ interactiveMap.factory('mapService', function(){
         return currentGDP;
     }
 
-    /* function getMap(){
-        // take local variables and run map
-        return 'mapStuff';
-    } */
-
     return {
         setLanguage: setLanguage,
         getLanguage: getLanguage,
@@ -62,17 +57,17 @@ interactiveMap.config(function($routeProvider){
         templateUrl: 'map.html',
         controller: 'homeMapController'
     });
-    $routeProvider.when('/lang:language*',{
+    $routeProvider.when('/:language*',{
         templateUrl: 'map.html',
-        controller: 'languageController'
+        controller: 'mapsController'
     });
-    $routeProvider.when('/lang:language/population:popId*',{
+    $routeProvider.when('/population:popId*',{
         templateUrl: 'map.html',
-        controller: 'popController'
+        controller: 'mapsController'
     });
-    $routeProvider.when('/lang:language/population:popId/gdp:gdpId',{
+    $routeProvider.when('/gdp:gdpId*',{
         templateUrl: 'map.html',
-        controller: 'gdpController'
+        controller: 'mapsController'
     });
     $routeProvider.otherwise({
         redirectoTo: '/#'
