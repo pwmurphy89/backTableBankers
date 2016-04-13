@@ -666,6 +666,305 @@ var countryLangs = [
 			"Hindi": 10,
 			"Persian": 30 
 		}
+	},
+
+	{
+		name: "Albania",
+		countryCode: "ALB",
+		languages: {
+			"Albanian": 100,
+			"Greek": 20,
+			"Italian": 20
+		}
+	},
+	{
+		name: "Armenia",
+		countryCode: "ARM",
+		languages: {
+			"Armenian": 100,
+			"Russian": 80
+		}
+	},
+	{
+		name: "Australia",
+		countryCode: "AUS",
+		languages: {
+			"English": 100,
+			"Chinese": 10
+		}
+	},
+	{
+		name: "Austria",
+		countryCode: "AUT",
+		languages: {
+			"German": 100,
+			"Turkish": 10
+		}
+	},
+	{
+		name: "Belgium",
+		countryCode: "BEL",
+		languages: {
+			"Dutch": 80,
+			"French": 60,
+			"German": 20,
+			"English": 10
+		}
+	},
+	{
+		name: "Belize",
+		countryCode: "BLZ",
+		languages: {
+			"English": 100,
+			"Spanish": 40
+		}
+	},
+	{
+		name: "Bosnia",
+		countryCode: "BIH",
+		languages: {
+			"Bosnian": 100,
+			"Croatian": 100,
+			"Serbian": 100,
+			"English": 50
+		}
+	},
+	{
+		name: "Bulgaria",
+		countryCode: "BGR",
+		languages: {
+			"Bulgarian": 100,
+			"Turkish": 20
+		}
+	},
+	{
+		name: "Cambodia",
+		countryCode: "KHM",
+		languages: {
+			"Khmer": 100,
+			"French": 40,
+			"English": 10
+		}
+	},
+	{
+		name: "Congo",
+		countryCode: "COD",
+		languages: {
+			"French": 100,
+			"Swahili": 50
+		}
+	},
+	{	name: "Croatia",
+		countryCode: "HRV",
+		languages: {
+			"Croatian": 100,
+			"Serbian": 100,
+			"English": 50,
+			"German": 35
+		}
+	},
+	{
+		name: "Czech Republic",
+		countryCode: "CZE",
+		languages: {
+			"Czech": 100,
+
+		}
+	},
+	{
+		name: "Denmark",
+		countryCode: "DNK",
+		languages: {
+			"Danish": 100,
+			"English": 80,
+			"German": 30
+		}
+	},
+	{
+		name: "Dominican Republic",
+		countryCode: "DOM",
+		languages: {
+			"Spanish": 100,
+			"French": 10,
+			"English": 10
+		}
+	},
+	{
+		name: "El Salvador",
+		countryCode: "SLV",
+		languages: {
+			"Spanish": 100
+		}
+	},
+	{
+		name: "Estonia",
+		countryCode: "EST",
+		languages: {
+			"Estonian": 100,
+			"Russian": 70,
+			"English": 30
+		}
+	},
+	{
+		name: "Finland",
+		countryCode: "FIN",
+		languages: {
+			"Finnish": 100,
+			"Swedish": 50,
+			"English": 60,
+			"German": 20
+		}
+	},
+	{
+		name: "Georgia",
+		countryCode: "GEO",
+		languages: {
+			"Georgian": 100,
+			"Russian": 10
+		}
+	},
+	{
+		name: "Greece",
+		countryCode: "GRC",
+		languages: {
+			"Greek": 100,
+		}
+	},
+	{
+		name: "Greenland",
+		countryCode: "GRL",
+		languages: {
+			"Greenlandic": 100,
+			"Danish": 80,
+			"English": 20
+		}
+	},
+	{
+		name: "Haiti",
+		countryCode: "HTI",
+		languages: {
+			"French": 100
+		}
+	},
+	{
+		name: "Hungary",
+		countryCode: "HUN",
+		languages: {
+			"Hungarian": 100,
+			"English": 20,
+			"German": 10
+		}
+	},
+	{
+		name: "Iceland",
+		countryCode: "ISL",
+		languages: {
+			"English": 80,
+			"Danish": 80,
+			"Swedish": 50,
+			"Norwegian": 50,
+			"German": 50
+		}
+	},
+	{
+		name: "Ireland":
+		countryCode: "IRL",
+		languages: {
+			"English": 100
+		}
+	},
+	{
+		name: "Israel",
+		countryCode: "ISR",
+		languages: {
+			"Hebrew": 100,
+			"English": 80,
+			"Arabic": 50,
+			"French": 10
+		}
+	},
+	{
+		name: "Jamaica",
+		countryCode: "JAM"
+		languages: {
+			"English": 100
+		}
+	},
+	{
+		name: "Jordan",
+		countryCode: "JOR",
+		languages: {
+			"Arabic": 100,
+			"English": 50,
+			"French": 20
+		}
+	},
+	{
+		name: "Kazakhstan",
+		countryCode: "KAZ",
+		languages: {
+			"Russian": 100
+		}
+	},
+	{
+		name: "Kuwait":
+		countryCode: "KWT",
+		languages: {
+			"Arabic": 100,
+			"English": 30
+		}
+	},
+	{
+		name: "Lebanon",
+		countryCode: "LBN",
+		languages: {
+			"Arabic": 100,
+			"French": 30,
+			"English": 10
+		}
+	},
+	{
+		name: "Libya",
+		countryCode: "LBY",
+		languages: {
+			"Arabic": 100,
+			"Berber": 80
+		}
+	},
+	{
+		name: "Madagascar",
+		countryCode: "MDG",
+		languages: {
+			"French": 100
+		}
+	},
+	{
+		name: "Mongolia",
+		countryCode: "",
+		languages: {
+			"Mongolian": 100,
+			"Russina": 80,
+			"English": 40,
+			"Chinese": 20
+		}
+	},
+	{
+		name: "Montenegro",
+		countryCode: "MNG",
+		languages: {
+			"Serbian": 80,
+			"Bosnian": 80
+		}
+	},
+	{
+		name: "Netherlands",
+		countryCode: "NLD",
+		languages: {
+			"Dutch": 100,
+			"English": 50,
+			"German": 20
+		}
 	}
+
 ];
 
