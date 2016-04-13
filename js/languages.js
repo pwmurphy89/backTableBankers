@@ -867,7 +867,7 @@ var countryLangs = [
 		}
 	},
 	{
-		name: "Ireland":
+		name: "Ireland",
 		countryCode: "IRL",
 		languages: {
 			"English": 100
