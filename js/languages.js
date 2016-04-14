@@ -966,4 +966,3 @@ var countryLangs = [
 	}
 
 ];
-
