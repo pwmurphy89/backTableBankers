@@ -28,6 +28,10 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 		masterData = combine2(langData, gdpData);
 		drawMap(masterData);
 	}
+	else if (option2Type !== '' && option3Type !== ''){
+		masterData = combine2(popData, gdpData);
+		drawMap(masterData);
+	}
 	else if (option1Type !== ''){
 		drawMap(langData);
 	}
@@ -96,8 +100,8 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 				popData[countries[i].countryCode] = {fillKey: "MEDIUM-HIGH"};
 			}else {
 				popData[countries[i].countryCode] = {fillKey: "HIGH"};
-			}    	
-		}	
+			}
+		}
 		if (population === "1"){
 			for (var key in popData){
 				if (popData[key].fillKey !== "LOW"){
