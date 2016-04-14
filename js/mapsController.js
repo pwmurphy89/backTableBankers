@@ -1,8 +1,14 @@
 interactiveMap.controller('mapsController', function($scope, $http, $routeParams, $location){
 
 	var language = $routeParams.option1;
+	var option1Type = returnOptionType($routeParams.option1);
+	//console.log(option1Type);
 	var population = $routeParams.option2;
+	var option2Type = returnOptionType($routeParams.option2);
+	//console.log(option2Type);
 	var gdp = $routeParams.option3;
+	var option3Type = returnOptionType($routeParams.option3);
+	//console.log(option3Type);
 
 	$scope.languages = languages;
 	$scope.countries = countries;
@@ -13,41 +19,34 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 	drawPopulation();
 	drawGDP();
 
-	// need to change this
-	if (language !== '' && population !== '' && gdp !== ''){
+	if (option1Type !== '' && option2Type !== '' && option3Type !== ''){
 		masterData = combine3(langData, popData, gdpData);
-		console.log(masterData);
 		drawMap(masterData);
 	}
-	else if (language !== '' && population !== ''){
+	else if (option1Type !== '' && option2Type !== ''){
 		masterData = combine2(langData, popData);
 		drawMap(masterData);
 	}
-	else if (population  !== '' && gdp !== ''){
-		masterData = combine2(popData, gdpData);
-		drawMap(masterData);
-	}
-	else if (language !== '' && gdp !== ''){
+	else if (option1Type !== '' && option3Type !== ''){
 		masterData = combine2(langData, gdpData);
 		drawMap(masterData);
 	}
-	else if (language !== ''){
+	else if (option1Type !== ''){
 		drawMap(langData);
 	}
-	else if (population !== ''){
+	else if (option2Type !== ''){
 		drawMap(popData);
 	}
-	else if (gdp !== ''){
+	else if (option3Type !== ''){
 		drawMap(gdpData);
 	}
-
 
 	function combine2(primaryObj, secondaryObj){
 		for(var key in primaryObj){
 			if(secondaryObj.hasOwnProperty(key)){
 			}else{
 				delete primaryObj[key];
-			}			
+			}
 		}
 		return primaryObj;
 	}
@@ -79,11 +78,11 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 		    		langData[countries[i].countryCode] = {fillKey: "MEDIUM"};
 		    	}else if(langPerc<80){
 		    		langData[countries[i].countryCode] = {fillKey: "MEDIUM-HIGH"};
-		    	}else{
+		    	}else if(langPerc>=80){
 		    		langData[countries[i].countryCode] = {fillKey: "HIGH"};
-		    	};		    	
-			};
-		};	
+		    	}
+			}
+		}
 	}
 
 	function drawPopulation(){
@@ -92,8 +91,6 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 		for(var i = 0; i < countries.length; i++){
 			popData[countries[i].countryCode] = {fillKey: "defaultFill"};
 			var myPop = countries[i].totalPop;
-			// need to add filter based on routeParams value (myPopId)	
-
 			if (myPop < popRanges[0].value){
 				popData[countries[i].countryCode] = {fillKey: "LOW"};
 			}else if(myPop < popRanges[1].value){
@@ -106,7 +103,7 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 				popData[countries[i].countryCode] = {fillKey: "HIGH"};
 			}    	
 		}	
-
+		console.log(popData);
 		if (population === 1){
 			for (var key in popData){
 				if (popData[key].fillKey !== "LOW"){
@@ -131,13 +128,14 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 					delete popData[key];
 				}
 			}
-		}else {
+		}else if (population === 5){
 			for (var key in popData){
 				if (popData[key].fillKey !== "HIGH"){
 					delete popData[key];
 				}
 			}
 		}
+		console.log(popData);
 	}
 
 	function drawGDP(){
@@ -185,7 +183,7 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 					delete gdpData[key];
 				}
 			}
-		}else {
+		}else if (gdp === 5){
 			for (var key in gdpData){
 				if (gdpData[key].fillKey !== "HIGH"){
 					delete gdpData[key];

@@ -68,4 +68,10 @@ interactiveMap.controller('filterController', function($scope, $http, $routePara
 		// change the path
 		$location.path(newString);
 	}
+
+	$scope.resetMap = function(){
+
+        $location.path('/');
+        $scope.newOption = '';
+    };
 });
