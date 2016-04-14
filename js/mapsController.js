@@ -2,14 +2,10 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 
 	var language = $routeParams.option1;
 	var option1Type = returnOptionType($routeParams.option1);
-	//console.log(option1Type);
 	var population = $routeParams.option2;
-	console.log(population);
 	var option2Type = returnOptionType($routeParams.option2);
-	//console.log(option2Type);
 	var gdp = $routeParams.option3;
 	var option3Type = returnOptionType($routeParams.option3);
-	//console.log(option3Type);
 
 	$scope.languages = languages;
 	$scope.countries = countries;
@@ -102,7 +98,6 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 				popData[countries[i].countryCode] = {fillKey: "HIGH"};
 			}    	
 		}	
-		console.log(popData);
 		if (population === "1"){
 			for (var key in popData){
 				if (popData[key].fillKey !== "LOW"){
@@ -134,7 +129,6 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 				}
 			}
 		}
-		console.log(popData);
 	}
 
 	function drawGDP(){
@@ -191,6 +185,9 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 	}
 
 function drawMap(data){
+	// call a function when the data object is empty to notiy user that their selection returns no results
+	if(Object.keys(data).length === 0){
+	}
 	map = new Datamap({
 			element: document.getElementById('map'),
 			fills: {
@@ -206,4 +203,5 @@ function drawMap(data){
 
 		map.legend();
 	}
+
 });
