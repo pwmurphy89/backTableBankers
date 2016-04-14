@@ -188,11 +188,12 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 		}
 	}
 
-function drawMap(data){
-	// call a function when the data object is empty to notiy user that their selection returns no results
-	if(Object.keys(data).length === 0){
-	}
-	map = new Datamap({
+	function drawMap(data){
+		// call a function when the data object is empty to notiy user that their selection returns no results
+		if(Object.keys(data).length === 0){
+		}
+
+		map = new Datamap({
 			element: document.getElementById('map'),
 			fills: {
 				'HIGH': '#7d0000',
@@ -202,8 +203,13 @@ function drawMap(data){
 				'LOW': '#FFD6D6',
 				defaultFill: '#ccc'
 			},
-			data
+			data,
+			responsive: true
 		});	
+
+		window.addEventListener('resize', function() {
+        	map.resize();
+    	});
 
 		map.legend();
 	}

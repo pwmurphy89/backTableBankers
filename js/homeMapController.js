@@ -4,6 +4,11 @@ interactiveMap.controller('homeMapController', function($scope, $http, $routePar
 		element: document.getElementById('map'),
 		fills: {
 			defaultFill: '#ccc'
-		}
+		},
+		responsive: true
 	});
+
+	window.addEventListener('resize', function() {
+        $scope.map.resize();
+    });
 });
