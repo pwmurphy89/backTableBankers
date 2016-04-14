@@ -26,10 +26,7 @@ button {
     width: 182px;
     height: 100px;
     box-shadow: 1px 0px 5px 1px;
-}
-
-#map{
-  z-index: -1;
+    z-index: 1;
 }
 
 
