@@ -60,4 +60,11 @@ interactiveMap.controller('filterController', function($scope, $http, $routePara
 		
 		$location.path(newString);
 	}
+
+	$scope.resetMap = function(){
+		$location.path('/');
+        $scope.selectedLanguage = '';
+        $scope.selectedPopulation = '';
+        $scope.selectedGDP = '';
+	};
 });
