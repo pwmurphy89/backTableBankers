@@ -30,16 +30,13 @@
 <body>
 
 <div id="search-panel" ng-controller="filterController">
-    <select id="country-option" ng-change="findCountry()" ng-model="selectedCountry" ng-options="country.name for country in countries">
-        <option value="">Choose a country</option>
-    </select>
-    <select id="language-option" ng-change="findLanguage()" ng-model="selectedLanguage" ng-options="language for language in languages">
+    <select id="language-option" ng-change="doFilter('one')" ng-model="newOption" ng-options="language for language in languages">
         <option value="">Choose a language</option>
     </select>
-    <select id="population-option" ng-change="findPopulation()" ng-model="selectedPopulation" ng-options="myPop.label for myPop in popRanges">
+    <select id="population-option" ng-change="doFilter('two')" ng-model="newOption" ng-options="myPop.label for myPop in popRanges">
         <option value="">Choose a population size</option>
     </select>
-    <select id="gdp-option" ng-change="findGdp()" ng-model="selectedGDP" ng-options="gdp.label for gdp in gdpRanges">
+    <select id="gdp-option" ng-change="doFilter('three')" ng-model="newOption" ng-options="gdp.label for gdp in gdpRanges">
         <option value="">Choose a GDP amount</option>
     </select>
     <div id="reset-map-div">

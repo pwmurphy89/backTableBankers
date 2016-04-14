@@ -60,3 +60,26 @@ addCountries(myPOPdata4, myGDPdata4);
 addCountries(myPOPdata5, myGDPdata5);
 
 // console.log(countries);
+
+// new function
+
+function returnOptionType(option){
+	var typeOfOption = '';
+
+	for (i=0; i < languages.length; i++){
+        if (option == languages[i]){
+            typeOfOption = 'language';
+        }
+    }
+    for (j=0; j < popRanges.length; j++){
+        if (option == popRanges[j].id){
+            typeOfOption = 'population';
+        }
+    }
+    for (g=0; g < gdpRanges.length; g++){
+        if (option == gdpRanges[g].id){
+            typeOfOption = 'gdp';
+        }
+    }
+	return typeOfOption;
+}

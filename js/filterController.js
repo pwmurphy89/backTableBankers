@@ -1,44 +1,71 @@
-interactiveMap.controller('filterController', function($scope, $http, $routeParams, $location, mapService){
-
+interactiveMap.controller('filterController', function($scope, $http, $routeParams, $location){
 	$scope.languages = languages;
 	$scope.countries = countries;
 	$scope.popRanges = popRanges;
 	$scope.gdpRanges = gdpRanges;
 
-	$scope.findLanguage = function(){
-		mapService.setLanguage($scope.selectedLanguage);
+	var option1Type = returnOptionType($routeParams.option1);
+	var option2Type = returnOptionType($routeParams.option2);
+	var option3Type = returnOptionType($routeParams.option3);
 
-		// var currLang = mapService.getLanguage();
+	$scope.doFilter = function(filterType){
+		var newString = '';
+		option1Type = returnOptionType($routeParams.option1);
+		option2Type = returnOptionType($routeParams.option2);
+		option3Type = returnOptionType($routeParams.option3);
 
-		// var currGDP = mapService.getGDP();
-		// var currPop = mapService.getPop();
-		/* if (currGDP == '' && currPop == '') {
-			$location.path(currLang);
-		} else if (currGDP == '') {
-			$location.path(currLang + '/' + currPop);
+		if (filterType == 'one'){
+			var newOptionType = returnOptionType($scope.newOption);
 		} else {
-			$location.path(currLang + '/' + currPop + '/' + currGDP);
-		} */
-		// var myPath = $location.path();
-		$location.path($scope.selectedLanguage);
+			var newOptionType = returnOptionType($scope.newOption.id);
+		}
+		var newOption = '';
+		console.log(newOptionType);
+		
+		if (newOptionType == 'language'){
+			newOption = $scope.newOption;
+			if (option2Type == '' && option3Type == ''){
+				newString = newOption;
+			} else if (option3Type == ''){
+				newString = newOption + '/' + $routeParams.option2;
+			} else {
+				newString = newOption + '/' + $routeParams.option2 + '/' + $routeParams.option3;
+			}
+		} else if (newOptionType == 'population'){
+			newOption = $scope.newOption.id;
+			if (option3Type == ''){
+				newString = $routeParams.option1 + '/' + newOption;
+			} else {
+				newString = $routeParams.option1 + '/' + newOption + '/' + $routeParams.option3;
+			}
+		} else if (newOptionType == 'gdp'){
+			newOption = $scope.newOption.id;
+			newString = $routeParams.option1 + '/' + $routeParams.option2 + '/' + newOption;
+		}
+		// what if the option has already been selected?
+		if (newOptionType == option1Type) {
+			// if we change language after setting other params, we go here...
+			newOption = $scope.newOption;
+			// otherwise put the new option at the beginning
+			if (option2Type == '' && option3Type == ''){
+				newString = newOption;
+			} else if (option3Type == ''){
+				newString = newOption + '/' + $routeParams.option2;
+			} else {
+				newString = newOption + '/' + $routeParams.option2 + '/' + $routeParams.option3;
+			}
+		} else if (newOptionType == option2Type) {
+			newOption = $scope.newOption.id;
+			if (option3Type == ''){
+				newString = $routeParams.option1 + '/' + newOption;
+			} else {
+				newString = $routeParams.option1 + '/' + newOption + '/' + $routeParams.option3;
+			}
+		} else if (newOptionType == option3Type) {
+			newOption = $scope.newOption.id;
+			newString = $routeParams.option1 + '/' + $routeParams.option2 + '/' + newOption;
+		}
+		// change the path
+		$location.path(newString);
 	}
-
-	$scope.findPopulation = function(){
-		mapService.setPop($scope.selectedPopulation.id);
-		// var currPop = mapService.getPop();
-		// var currGDP = mapService.getGDP();
-		// var currLang = mapService.getLanguage();
-		// var myPath = $location.path();
-		$location.path('/population' + $scope.selectedPopulation.id);
-	}
-
-	$scope.findGdp = function(){
-		mapService.setGDP($scope.selectedGDP.id);
-		// var currGDP = mapService.getGDP();
-		// var currLang = mapService.getLanguage();
-		// var currPop = mapService.getPop();
-		// var myPath = $location.path();
-		$location.path('/gdp' + $scope.selectedGDP.id);
-	}
-
-}); 
+});
