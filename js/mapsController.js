@@ -4,6 +4,7 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 	var option1Type = returnOptionType($routeParams.option1);
 	//console.log(option1Type);
 	var population = $routeParams.option2;
+	console.log(population);
 	var option2Type = returnOptionType($routeParams.option2);
 	//console.log(option2Type);
 	var gdp = $routeParams.option3;
@@ -62,7 +63,6 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 	}
 
 	function drawLanguage(){	
-		console.log("Calculating Languages");
 		langData = {};	
 			// Lists countries with selected language
 		for(var i = 0; i < countries.length;i++){
@@ -86,7 +86,6 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 	}
 
 	function drawPopulation(){
-		console.log("Calculating Population");
 		popData = {};
 		for(var i = 0; i < countries.length; i++){
 			popData[countries[i].countryCode] = {fillKey: "defaultFill"};
@@ -104,31 +103,31 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 			}    	
 		}	
 		console.log(popData);
-		if (population === 1){
+		if (population === "1"){
 			for (var key in popData){
 				if (popData[key].fillKey !== "LOW"){
 					delete popData[key];
 				}
 			}
-		}else if (population === 2){
+		}else if (population === "2"){
 			for (var key in popData){
 				if (popData[key].fillKey !== "MEDIUM-LOW"){
 					delete popData[key];
 				}
 			}
-		}else if (population === 3){
+		}else if (population === "3"){
 			for (var key in popData){
 				if (popData[key].fillKey !== "MEDIUM"){
 					delete popData[key];
 				}
 			}
-		}else if (population === 4){
+		}else if (population === "4"){
 			for (var key in popData){
 				if (popData[key].fillKey !== "MEDIUM-HIGH"){
 					delete popData[key];
 				}
 			}
-		}else if (population === 5){
+		}else if (population === "5"){
 			for (var key in popData){
 				if (popData[key].fillKey !== "HIGH"){
 					delete popData[key];
@@ -139,7 +138,6 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 	}
 
 	function drawGDP(){
-		console.log("Calculating GDP");
 		gdpData = {};
 		// also more needs to be done to get this working
 		for(var i = 0; i < countries.length; i++){
@@ -159,31 +157,31 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 			}	
 		}	
 
-		if (gdp === 1){
+		if (gdp === "6"){
 			for (var key in gdpData){
 				if (gdpData[key].fillKey !== "LOW"){
 					delete gdpData[key];
 				}
 			}
-		}else if (gdp === 2){
+		}else if (gdp === "7"){
 			for (var key in gdpData){
 				if (gdpData[key].fillKey !== "MEDIUM-LOW"){
 					delete gdpData[key];
 				}
 			}
-		}else if (gdp === 3){
+		}else if (gdp === "8"){
 			for (var key in gdpData){
 				if (gdpData[key].fillKey !== "MEDIUM"){
 					delete gdpData[key];
 				}
 			}
-		}else if (gdp === 4){
+		}else if (gdp === "9"){
 			for (var key in gdpData){
 				if (gdpData[key].fillKey !== "MEDIUM-HIGH"){
 					delete gdpData[key];
 				}
 			}
-		}else if (gdp === 5){
+		}else if (gdp === "10"){
 			for (var key in gdpData){
 				if (gdpData[key].fillKey !== "HIGH"){
 					delete gdpData[key];
