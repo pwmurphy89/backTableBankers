@@ -25,7 +25,7 @@
 
 ## Demo
 
-[Live Demo:](http://students.digitalcrafts.com/backTableBankers)
+[Live Demo](http://students.digitalcrafts.com/backTableBankers)
 
 ## Screenshots
 
@@ -51,7 +51,7 @@
 
 ##Code examples
 
-HTML for search box:
+###HTML for search box:
 ```
 <div id="search-panel" ng-controller="filterController">
     <select id="language-option" ng-change="doFilter('one')" ng-model="newOption" ng-options="language for language in languages">
