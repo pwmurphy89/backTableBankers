@@ -50,9 +50,12 @@ interactiveMap.controller('filterController', function($scope, $http, $routePara
 		} 
 		// you have selected a population range
 		else if (filterType == 'two'){
-			if (returnOptionType($routeParams.option2) == ''){
-				newOption = '';
+			// the first conditional tests to see if population was unselected
+			if (!$scope.selectedPopulation){
+				// we need to put something in the option2 route parameter to avoid errors
+				newOption = 'default';
 			} else {
+				// otherwise put the new selection in the option2 route parameter
 				newOption = $scope.selectedPopulation.id;
 			}
 			if (option3Type == ''){
@@ -63,7 +66,12 @@ interactiveMap.controller('filterController', function($scope, $http, $routePara
 		}
 		// you have selected a gdp range
 		else if (filterType == 'three'){
-			newOption = $scope.selectedGDP.id;
+			// the first conditional tests to see if GDP was unselected
+			if (!$scope.selectedGDP){
+				newOption = '';
+			} else {
+				newOption = $scope.selectedGDP.id;
+			}
 			newString = $routeParams.option1 + '/' + $routeParams.option2 + '/' + newOption;
 		}
 		// write the new path to $location
