@@ -35,7 +35,6 @@ interactiveMap.controller('filterController', function($scope, $http, $routePara
 			var newOptionType = returnOptionType($scope.selectedGDP.id);
 		}
 		var newOption = '';
-		console.log(newOptionType);
 		
 		if (newOptionType == 'language'){
 			newOption = $scope.selectedLanguage;
