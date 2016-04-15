@@ -27,10 +27,10 @@ interactiveMap.controller('homeMapController', function($scope, $http, $routePar
 						'<p>Languages: ' + languageText + '</p>' +
 						'<p>Population: ' + population + '</p>' +
 						'<p>GDP: ' + gdp + '</p></div>';
-					}
-				}			
-			}
-		}
+					};
+				};			
+			};
+		};
 	});
 
 	window.addEventListener('resize', function() {
