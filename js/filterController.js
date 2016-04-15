@@ -5,7 +5,7 @@ interactiveMap.controller('filterController', function($scope, $http, $routePara
 	$scope.popRanges = popRanges;
 	$scope.gdpRanges = gdpRanges;
 
-	// this function preserves the dropdown selections when the route is changed
+	// this function preserves the dropdown selections when the location is changed
 	$scope.$on('$routeChangeSuccess', function(){
 		// change the dropdown selections to match what's in the route parameters
 		$scope.selectedLanguage = $routeParams.option1;
@@ -36,9 +36,12 @@ interactiveMap.controller('filterController', function($scope, $http, $routePara
 			// get the new option from the dropdown menu
 			newOption = $scope.selectedLanguage;
 			// what if the other two route parameters are not selected?
-			if (option2Type == '' && option3Type == ''){
-				newString = newOption;
+			if (option2Type == '' && option3Type == '' && !$scope.selectedLanguage){
+				newString = '';
 			} 
+			else if (option2Type == '' && option3Type == '') {
+				newString = newOption;
+			}
 			// what if the last route parameter is not selected?
 			else if (option3Type == ''){
 				newString = newOption + '/' + $routeParams.option2;
@@ -50,29 +53,42 @@ interactiveMap.controller('filterController', function($scope, $http, $routePara
 		} 
 		// you have selected a population range
 		else if (filterType == 'two'){
-			// the first conditional tests to see if population was unselected
-			if (!$scope.selectedPopulation){
-				// we need to put something in the option2 route parameter to avoid errors
-				newOption = 'default';
-			} else {
-				// otherwise put the new selection in the option2 route parameter
-				newOption = $scope.selectedPopulation.id;
+			// the first conditional tests to see if all options were unselected
+			if (!$scope.selectedPopulation && option1Type == '' && option3Type == ''){
+				newString = '';
 			}
-			if (option3Type == ''){
-				newString = $routeParams.option1 + '/' + newOption;
-			} else {
-				newString = $routeParams.option1 + '/' + newOption + '/' + $routeParams.option3;
+			else if (!$scope.selectedPopulation){
+				//if population was deselected, give the location a 'default' string to avoid errors
+				newOption = 'default';
+				if (option3Type == ''){
+					newString = $routeParams.option1 + '/' + newOption;
+				} else {
+					newString = $routeParams.option1 + '/' + newOption + '/' + $routeParams.option3;
+				}
+			}
+			else {
+				// otherwise put the id property of the new selection in the option2 route parameter
+				newOption = $scope.selectedPopulation.id;
+				if (option3Type == ''){
+					newString = $routeParams.option1 + '/' + newOption;
+				} else {
+					newString = $routeParams.option1 + '/' + newOption + '/' + $routeParams.option3;
+				}
 			}
 		}
 		// you have selected a gdp range
 		else if (filterType == 'three'){
-			// the first conditional tests to see if GDP was unselected
-			if (!$scope.selectedGDP){
-				newOption = '';
+			// the first conditional tests to see if all options were unselected
+			if (!$scope.selectedGDP && option1Type == '' && option2Type == ''){
+				newString = '';
 			} else {
-				newOption = $scope.selectedGDP.id;
+				if (!$scope.selectedGDP){
+					newOption = '';
+				} else {
+					newOption = $scope.selectedGDP.id;
+				}
+				newString = $routeParams.option1 + '/' + $routeParams.option2 + '/' + newOption;
 			}
-			newString = $routeParams.option1 + '/' + $routeParams.option2 + '/' + newOption;
 		}
 		// write the new path to $location
 		$location.path(newString);

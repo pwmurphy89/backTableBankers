@@ -1,16 +1,5 @@
 var interactiveMap = angular.module('interactiveMap', ['ngRoute']);
 
-interactiveMap.run( function($rootScope, $location, $routeParams) {
-    $rootScope.$watch(function() {
-        return $location.path();
-    },
-    function(a){
-        if(a !== '/#'){
-            //console.log('url has changed: ' + a);
-        };
-    });
-});
-
 interactiveMap.config(function($routeProvider){
     $routeProvider.when('/',{
         templateUrl: 'map.html',

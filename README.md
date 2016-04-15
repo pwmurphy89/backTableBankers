@@ -15,14 +15,17 @@
 + Structured initial AngularJS components
 
 ### Keith
-+ Slept
++ Designed JSON 'database' to incorporate data on country names, country codes, languages spoken, total population, and GDP
++ Used query builder to gather 'seed' JSON data from World Bank API
++ Collaborated with team members to debug JS scripts
++ Added comments to JS scripts
++ Collaborated with team members to write filter-controller functions
 
 ### Patrick
-+ Helped create Language Data.
++ Helped create Language Data
 + Created function to preserve dropdown slection when the location is changed
 + Helped modify function to update scope with button changes
-+ Identified a few bugs and helped find solution.
-
++ Identified a few bugs and helped find solutions
 
 ### Tristan
 + Helped create the Language Data and created function to sort the object
