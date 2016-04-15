@@ -29,6 +29,6 @@ interactiveMap.config(function($routeProvider){
         controller: 'mapsController'
     });
     $routeProvider.otherwise({
-        redirectoTo: '/'
+        redirecTo: '/'
     });
 });
