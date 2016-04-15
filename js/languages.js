@@ -633,7 +633,7 @@ var countryLangs = [
 		}
 	},
 		{
-		name: "Syrian Arab Republic",
+		name: "Syria",
 		countryCode: "SYR",
 		languages: {
 			"Arabic": 100,
