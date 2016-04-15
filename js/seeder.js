@@ -1,4 +1,4 @@
-// get a list of languages from languages.js
+// get a list of unique languages from languages.js
 var languages = [];
 function getLanguageList(){
 	for (i=0; i<countryLangs.length; i++){
@@ -13,11 +13,9 @@ function getLanguageList(){
 	}
 	languages.sort();
 }
-
 getLanguageList();
-// console.log(languages);
 
-// this array will become the master array that stores data on 250ish countries
+// this array will become the master array that stores data on all the countries
 var countries = [];
 // this constructor defines the properties of the country object
 var Country = function(name, totalPop, gdp, languages, countrycode){
@@ -44,7 +42,6 @@ function addCountries(popdata, gdpdata){
 			if (myCountry == countryLangs[j].name) {
 				// the country names match, so add the languages object
 				myLanguages = countryLangs[j].languages;
-
 				myCountryCode = countryLangs[j].countryCode;
 			}
 		}
@@ -52,17 +49,16 @@ function addCountries(popdata, gdpdata){
 	}
 }
 
-// call the function, passing data from the myGDPqueryN.js and myPOPqueryN.js files
+// call the addCountries function, passing data from the myGDPqueryN.js and myPOPqueryN.js files
 addCountries(myPOPdata1, myGDPdata1);
 addCountries(myPOPdata2, myGDPdata2);
 addCountries(myPOPdata3, myGDPdata3);
 addCountries(myPOPdata4, myGDPdata4);
 addCountries(myPOPdata5, myGDPdata5);
 
-// console.log(countries);
-
-// new function
-
+// this function validates route parameters
+// pass a route paramter as option to this function and you determine whether it's a language/pop/gdp parameter
+// the function returns empty string if the parameter has not been set
 function returnOptionType(option){
 	var typeOfOption = '';
 

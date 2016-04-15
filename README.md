@@ -1,1 +1,81 @@
-# backTableBankers
+# Interactive Map App
+
+#### Interactive map using HTML, CSS, JavaScript, AngularJS, and DataMaps (http://datamaps.github.io/)
+
+## Summary
+
+#### Single page Angular app that allows user to filter search based on language, population, and GDP data, with each specific map having its own URL. 
+
+## Team members and contributions
+
+### Jonathan Melin
++ Initiated idea and vision
++ Designed layout
++ Implemented and customized DataMaps features (coloring, popups, etc.)
++ Structured initial AngularJS components
+
+### Keith
++ Slept
+
+### Patrick
++ Helped create Language Data.
++ Created function to preserve dropdown slection when the location is changed
++ Helped modify function to update scope with button changes
++ Identified a few bugs and helped find solution.
+
+
+### Tristan
++ Put out house fire
+
+## Demo
+
+[Live Demo](http://students.digitalcrafts.com/backTableBankers)
+
+## Screenshots
+
+###Home page:
+![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/home.png)
+
+###Language search:
+![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/lang.png)
+
+###Language and population search:
+![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/lang-pop.png)
+
+###Language, population, and GDP search:
+![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/lang-pop-gdp.png)
+
+###Custom popup data:
+![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/popup1.png)
+![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/popup2.png)
+
+###Responsive design:
+![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/responsive1.png)
+![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/responsive2.png)
+
+##Code examples
+
+###HTML for search box:
+```
+<div id="search-panel" ng-controller="filterController">
+    <select id="language-option" ng-change="doFilter('one')" ng-model="newOption" ng-options="language for language in languages">
+        <option value="">Choose a language</option>
+    </select>
+    <select id="population-option" ng-change="doFilter('two')" ng-model="newOption" ng-options="myPop.label for myPop in popRanges">
+        <option value="">Choose a population size</option>
+    </select>
+    <select id="gdp-option" ng-change="doFilter('three')" ng-model="newOption" ng-options="gdp.label for gdp in gdpRanges">
+        <option value="">Choose a GDP amount</option>
+    </select>
+    <div id="reset-map-div">
+        <button ng-click="resetMap()">Reset Map</button>
+    </div> 
+</div>
+```
+
+##TO DO
+
++ Add remaining countries
++ Add languages
++ Add additional filters
+

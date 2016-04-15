@@ -6,17 +6,17 @@ var popRanges = [
 	},
 	{
 		id: 2,
-		label: "1 -- 10 million",
+		label: "1 to 10 million",
 		value: 10000000
 	},
 	{
 		id: 3,
-		label: "10 -- 100 million",
+		label: "10 to 100 million",
 		value: 100000000
 	},
 	{
 		id: 4,
-		label: "100 million -- 1 billion",
+		label: "100 million to 1 billion",
 		value: 1000000000
 	},
 	{
