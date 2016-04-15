@@ -191,6 +191,9 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 	function drawMap(data){
 		// call a function when the data object is empty to notiy user that their selection returns no results
 		if(Object.keys(data).length === 0){
+			document.getElementById('search-result').style.display = "block";
+		}else{
+			document.getElementById('search-result').style.display = "none";
 		}
 
 		map = new Datamap({

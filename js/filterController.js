@@ -65,5 +65,6 @@ interactiveMap.controller('filterController', function($scope, $http, $routePara
         $scope.selectedLanguage = '';
         $scope.selectedPopulation = '';
         $scope.selectedGDP = '';
+       	document.getElementById('search-result').style.display = "none";
 	};
 });
