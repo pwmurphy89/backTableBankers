@@ -2,6 +2,10 @@
 
 #### Interactive map using HTML, CSS, JavaScript, AngularJS, and DataMaps (http://datamaps.github.io/)
 
+## Summary
+
+#### Single page Angular app that allows user to filter search based on language, population, and GDP data, with each specific map having its own URL. 
+
 ## Team members and contributions
 
 ### Jonathan Melin
@@ -19,10 +23,6 @@
 ### Tristan
 + Put out house fire
 
-## Summary
-
-#### Single page Angular app that allows user to filter search based on language, population, and GDP data, with each specific map having its own URL. 
-
 ## Demo
 
 [Live Demo]: http://students.digitalcrafts.com/backTableBankers
@@ -30,7 +30,7 @@
 ## Screenshots
 
 Home page:
-![alt text]()
+![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/home.png)
 
 Language search:
 ![alt text]()
