@@ -3,7 +3,7 @@ interactiveMap.controller('homeMapController', function($scope, $http, $routePar
 	$scope.map = new Datamap({
 		element: document.getElementById('map'),
 		fills: {
-			defaultFill: '#ccc'
+			defaultFill: '#aaa'
 		},
 		responsive: true,
 		geographyConfig: {
