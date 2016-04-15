@@ -18,7 +18,11 @@
 + Slept
 
 ### Patrick
-+ Watched YouTube videos
++ Helped create Language Data.
++ Created function to preserve dropdown slection when the location is changed
++ Helped modify function to update scope with button changes
++ Identified a few bugs and helped find solution.
+
 
 ### Tristan
 + Put out house fire
