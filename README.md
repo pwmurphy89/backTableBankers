@@ -17,9 +17,8 @@
 ### Keith
 + Designed JSON 'database' to incorporate data on country names, country codes, languages spoken, total population, and GDP
 + Used query builder to gather 'seed' JSON data from World Bank API
-+ Collaborated with team members to debug JS scripts
 + Added comments to JS scripts
-+ Collaborated with team members to write filter-controller functions
++ Collaborated with team members to write filter-controller functions and debug JS scripts
 
 ### Patrick
 + Helped create Language Data
@@ -61,8 +60,8 @@
 
 ##Code examples
 
-###HTML for search box:
-```
+### HTML for search box:
+```html
 <div id="search-panel" ng-controller="filterController">
     <select id="language-option" ng-change="doFilter('one')" ng-model="newOption" ng-options="language for language in languages">
         <option value="">Choose a language</option>
@@ -78,7 +77,8 @@
     </div> 
 </div>
 ```
-###Native Javascript used to sort data objects:
+
+### Native JavaScript used to sort data objects:
 ```javascript
 function combine3(primaryObj, secondaryOneObj, secondaryTwoObj){
     for(var key in primaryObj){
@@ -90,6 +90,33 @@ function combine3(primaryObj, secondaryOneObj, secondaryTwoObj){
     return primaryObj;
 }
 ```
+
+### Native JavaScript used to assign color shades to countries based on native speaker percentages:
+```javascript
+function drawLanguage(){    
+    langData = {};  
+        // Lists countries with selected language
+    for(var i = 0; i < countries.length;i++){
+        var langProp = Object.getOwnPropertyNames(countries[i].languages);
+        if(langProp.indexOf(language) > -1){
+            // Gets Value of selected language in countries that have it
+            var langPerc = countries[i].languages[language];
+            if(langPerc < 20){
+                langData[countries[i].countryCode] = {fillKey: "LOW"};
+            }else if(langPerc<40){
+                langData[countries[i].countryCode] = {fillKey: "MEDIUM-LOW"};
+            }else if(langPerc<60){
+                langData[countries[i].countryCode] = {fillKey: "MEDIUM"};
+            }else if(langPerc<80){
+                langData[countries[i].countryCode] = {fillKey: "MEDIUM-HIGH"};
+            }else if(langPerc>=80){
+                langData[countries[i].countryCode] = {fillKey: "HIGH"};
+            };
+        };
+    };
+};
+```
+
 ##TO DO
 
 + Add remaining countries

@@ -47,27 +47,27 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 			if(secondaryObj.hasOwnProperty(key)){
 			}else{
 				delete primaryObj[key];
-			}
-		}
+			};
+		};
 		return primaryObj;
-	}
+	};
 
 	function combine3(primaryObj, secondaryOneObj, secondaryTwoObj){
 		for(var key in primaryObj){
 			if(secondaryOneObj.hasOwnProperty(key) && secondaryTwoObj.hasOwnProperty(key)){
 			}else{
 				delete primaryObj[key];
-			}	
-		}
+			};	
+		};
 		return primaryObj;
-	}
+	};
 
 	function drawLanguage(){	
 		langData = {};	
 			// Lists countries with selected language
 		for(var i = 0; i < countries.length;i++){
-			var x = Object.getOwnPropertyNames(countries[i].languages);
-			if(x.indexOf(language) > -1){
+			var langProp = Object.getOwnPropertyNames(countries[i].languages);
+			if(langProp.indexOf(language) > -1){
 				// Gets Value of selected language in countries that have it
 		    	var langPerc = countries[i].languages[language];
 	    		if(langPerc < 20){
@@ -80,10 +80,10 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 		    		langData[countries[i].countryCode] = {fillKey: "MEDIUM-HIGH"};
 		    	}else if(langPerc>=80){
 		    		langData[countries[i].countryCode] = {fillKey: "HIGH"};
-		    	}
-			}
-		}
-	}
+		    	};
+			};
+		};
+	};
 
 	function drawPopulation(){
 		popData = {};
@@ -100,40 +100,40 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 				popData[countries[i].countryCode] = {fillKey: "MEDIUM-HIGH"};
 			}else {
 				popData[countries[i].countryCode] = {fillKey: "HIGH"};
-			}
-		}
+			};
+		};
 		if (population === "1"){
 			for (var key in popData){
 				if (popData[key].fillKey !== "LOW"){
 					delete popData[key];
-				}
-			}
+				};
+			};
 		}else if (population === "2"){
 			for (var key in popData){
 				if (popData[key].fillKey !== "MEDIUM-LOW"){
 					delete popData[key];
-				}
-			}
+				};
+			};
 		}else if (population === "3"){
 			for (var key in popData){
 				if (popData[key].fillKey !== "MEDIUM"){
 					delete popData[key];
-				}
-			}
+				};
+			};
 		}else if (population === "4"){
 			for (var key in popData){
 				if (popData[key].fillKey !== "MEDIUM-HIGH"){
 					delete popData[key];
-				}
-			}
+				};
+			};
 		}else if (population === "5"){
 			for (var key in popData){
 				if (popData[key].fillKey !== "HIGH"){
 					delete popData[key];
-				}
-			}
-		}
-	}
+				};
+			};
+		};
+	};
 
 	function drawGDP(){
 		gdpData = {};
@@ -152,41 +152,41 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 				gdpData[countries[i].countryCode] = {fillKey: "MEDIUM-HIGH"};
 			}else{
 				gdpData[countries[i].countryCode] = {fillKey: "HIGH"};
-			}	
-		}	
+			};	
+		};	
 
 		if (gdp === "6"){
 			for (var key in gdpData){
 				if (gdpData[key].fillKey !== "LOW"){
 					delete gdpData[key];
-				}
-			}
+				};
+			};
 		}else if (gdp === "7"){
 			for (var key in gdpData){
 				if (gdpData[key].fillKey !== "MEDIUM-LOW"){
 					delete gdpData[key];
-				}
-			}
+				};
+			};
 		}else if (gdp === "8"){
 			for (var key in gdpData){
 				if (gdpData[key].fillKey !== "MEDIUM"){
 					delete gdpData[key];
-				}
-			}
+				};
+			};
 		}else if (gdp === "9"){
 			for (var key in gdpData){
 				if (gdpData[key].fillKey !== "MEDIUM-HIGH"){
 					delete gdpData[key];
-				}
-			}
+				};
+			};
 		}else if (gdp === "10"){
 			for (var key in gdpData){
 				if (gdpData[key].fillKey !== "HIGH"){
 					delete gdpData[key];
-				}
-			}
-		}
-	}
+				};
+			};
+		};
+	};
 
 	function drawMap(data){
 		// call a function when the data object is empty to notiy user that their selection returns no results
@@ -194,7 +194,7 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 			document.getElementById('search-result').style.display = "block";
 		}else{
 			document.getElementById('search-result').style.display = "none";
-		}
+		};
 
 		map = new Datamap({
 			element: document.getElementById('map'),
@@ -229,17 +229,15 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 							'<p>Languages: ' + languageText + '</p>' +
 							'<p>Population: ' + population + '</p>' +
 							'<p>GDP: ' + gdp + '</p></div>';
-						}
-					}			
-				}
-			}
+						};
+					};		
+				};
+			};
 		});	
 
 		window.addEventListener('resize', function() {
         	map.resize();
     	});
-
 		map.legend();
-	}
-
+	};
 });
