@@ -944,7 +944,7 @@ var countryLangs = [
 			"Mongolian": 100,
 			"Russian": 80,
 			"English": 40,
-			"Chinese": 20
+			"Mandarin": 20
 		}
 	},
 	{
