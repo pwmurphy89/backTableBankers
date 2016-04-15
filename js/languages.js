@@ -1023,7 +1023,7 @@ var countryLangs = [
 		countryCode: "BTN",
 		languages: {
 			"Bengali": 20,
-			"Mandarin" 20
+			"Mandarin": 20
 		}
 	},
 	{
