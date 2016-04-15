@@ -6,17 +6,17 @@ var gdpRanges = [
 	},
 	{
 		id: 7,
-		label: "1 -- 10 billion",
+		label: "1 to 10 billion",
 		value: 10000000000
 	},
 	{
 		id: 8,
-		label: "10 billion -- 100 billion",
+		label: "10 to 100 billion",
 		value: 100000000000
 	},
 	{
 		id: 9,
-		label: "100 billion -- 1 trillion",
+		label: "100 billion to 1 trillion",
 		value: 1000000000000
 	},
 	{
