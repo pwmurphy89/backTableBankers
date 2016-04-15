@@ -1,11 +1,13 @@
+// the filter controller loads on page load
 interactiveMap.controller('filterController', function($scope, $http, $routeParams, $location){
 	$scope.languages = languages;
 	$scope.countries = countries;
 	$scope.popRanges = popRanges;
 	$scope.gdpRanges = gdpRanges;
 
-	$scope.$on('$routeChangeSuccess', function() {
-
+	// this function preserves the dropdown selections when the route is changed
+	$scope.$on('$routeChangeSuccess', function(){
+		// change the dropdown selections to match what's in the route parameters
 		$scope.selectedLanguage = $routeParams.option1;
 
 		for(var i = 0; i < popRanges.length;i++){
@@ -21,42 +23,50 @@ interactiveMap.controller('filterController', function($scope, $http, $routePara
 		}	
   	});
 
+	// the doFilter function gets called when a dropdown option is changed
 	$scope.doFilter = function(filterType){
 		var newString = '';
 		var option1Type = returnOptionType($routeParams.option1);
 		var option2Type = returnOptionType($routeParams.option2);
 		var option3Type = returnOptionType($routeParams.option3);
-
-		if (filterType == 'one'){
-			var newOptionType = returnOptionType($scope.selectedLanguage);
-		} else if (filterType == 'two') {
-			var newOptionType = returnOptionType($scope.selectedPopulation.id);
-		} else if (filterType == 'three') {
-			var newOptionType = returnOptionType($scope.selectedGDP.id);
-		}
 		var newOption = '';
-		
-		if (newOptionType == 'language'){
+
+		// you have selected a language
+		if (filterType == 'one'){
+			// get the new option from the dropdown menu
 			newOption = $scope.selectedLanguage;
+			// what if the other two route parameters are not selected?
 			if (option2Type == '' && option3Type == ''){
 				newString = newOption;
-			} else if (option3Type == ''){
+			} 
+			// what if the last route parameter is not selected?
+			else if (option3Type == ''){
 				newString = newOption + '/' + $routeParams.option2;
-			} else {
+			} 
+			// otherwise build a string that includes all options
+			else {
 				newString = newOption + '/' + $routeParams.option2 + '/' + $routeParams.option3;
 			}
-		} else if (newOptionType == 'population'){
-			newOption = $scope.selectedPopulation.id;
+		} 
+		// you have selected a population range
+		else if (filterType == 'two'){
+			if (returnOptionType($routeParams.option2) == ''){
+				newOption = '';
+			} else {
+				newOption = $scope.selectedPopulation.id;
+			}
 			if (option3Type == ''){
 				newString = $routeParams.option1 + '/' + newOption;
 			} else {
 				newString = $routeParams.option1 + '/' + newOption + '/' + $routeParams.option3;
 			}
-		} else if (newOptionType == 'gdp'){
+		}
+		// you have selected a gdp range
+		else if (filterType == 'three'){
 			newOption = $scope.selectedGDP.id;
 			newString = $routeParams.option1 + '/' + $routeParams.option2 + '/' + newOption;
 		}
-		
+		// write the new path to $location
 		$location.path(newString);
 	}
 
