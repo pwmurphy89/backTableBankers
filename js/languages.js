@@ -690,7 +690,7 @@ var countryLangs = [
 		countryCode: "AUS",
 		languages: {
 			"English": 100,
-			"Chinese": 10
+			"Mandarin": 10
 		}
 	},
 	{
