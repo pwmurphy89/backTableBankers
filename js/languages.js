@@ -218,7 +218,8 @@ var countryLangs = [
 		languages: {
 			"Swahili": 80,
 			"English": 60,
-			"Arabic": 20
+			"Arabic": 20,
+			"Bantu": 20
 		}
 	},	
 	{
@@ -690,7 +691,7 @@ var countryLangs = [
 		countryCode: "AUS",
 		languages: {
 			"English": 100,
-			"Chinese": 10
+			"Mandarin": 10
 		}
 	},
 	{
@@ -944,7 +945,7 @@ var countryLangs = [
 			"Mongolian": 100,
 			"Russian": 80,
 			"English": 40,
-			"Chinese": 20
+			"Mandarin": 20
 		}
 	},
 	{
@@ -963,7 +964,362 @@ var countryLangs = [
 			"English": 50,
 			"German": 20
 		}
-	}
+	},
+	//adding African countries
+	{
+		name: "Andorra",
+		countryCode: "AND",
+		languages: {
+			"Spanish": 80,
+			"French": 50,
+			"Portuguese": 20 
+		}
+	},
+	{
+		name: "Angola",
+		countryCode: "AGO",
+		languages: {
+			"Portuguese": 70,
+			"Bantu": 50
+		}
+	},
+	{
+		name: "Azerbaijan",
+		countryCode: "AZE",
+		languages: {
+			"Russian": 30,
+			"Armenian": 5 
+		}
+	},
+	{
+		name: "Bahrain",
+		countryCode: "BHR",
+		languages: {
+			"Arabic": 100,
+			"English": 50
+		}
+	},
+	{
+		name: "Belarus",
+		countryCode: "BLR",
+		languages: {
+			"Russian": 70,
+			"Polish": 5,
+			"Ukranian": 5
 
+		}
+	},
+	{
+		name: "Burundi",
+		countryCode: "BDI",
+		languages: {
+			"French": 70,
+			"Swahili": 20,
+			"English": 5 
+		}
+	},
+	{
+		name: "Bhutan",
+		countryCode: "BTN",
+		languages: {
+			"Bengali": 20,
+			"Mandarin" 20
+		}
+	},
+	{
+		name: "Botswana",
+		countryCode: "BWA",
+		languages: {
+			"English": 40,
+			"Swahili": 5 
+		}
+	},
+	{
+		name: "Brunei",
+		countryCode: "BRN",
+		languages: {
+			"Malay": 80,
+			"English": 40,
+			"Mandarin": 30
+
+		}
+	},
+	{
+		name: "Cameroon",
+		countryCode: "CMR",
+		languages: {
+			"French": 60,
+			"English": 50
+		}
+	},
+	{
+		name: "Central African Republic",
+		countryCode: "CAF",
+		languages: {
+			"French": 70, 
+		}
+	},
+	{
+		name: "Chad",
+		countryCode: "TCD",
+		languages: {
+			"French": 80,
+			"Arabic": 50 
+		}
+	},
+	{
+		name: "Djibouti",
+		countryCode: "DJI",
+		languages: {
+			"French": 70,
+			"Arabic": 60
+		}
+	},
+	{
+		name: "Equatorial Guinea",
+		countryCode: "GNQ",
+		languages: {
+			"Spanish": 70,
+			"French": 30
+		}
+	},
+	{
+		name: "Eritrea",
+		countryCode: "ERI",
+		languages: {
+			"Arabic": 80,
+			"English": 30 
+		}
+	},
+	{
+		name: "Gabon",
+		countryCode: "GAB",
+		languages: {
+			"French": 70 
+		}
+	},
+	{
+		name: "Gambia",
+		countryCode: "GMB",
+		languages: {
+			"English": 50
+		}
+	},
+	{
+		name: "Guinea-Bissau",
+		countryCode: "GNB",
+		languages: {
+			"Portuguese": 30,
+			"French": 5,
+			"English": 5 
+		}
+	},
+	{
+		name: "Kyrgyz Republic",
+		countryCode: "KGZ",
+		languages: {
+			"Uzbek": 15,
+			"Russian": 30 
+		}
+	},
+	{
+		name: "Lao PDR",
+		countryCode: "LAO",
+		languages: {
+			"French": 50,
+			"English": 40 
+		}
+	},
+	{
+		name: "Latvia",
+		countryCode: "LVA",
+		languages: {
+			"Russian": 35,
+			"Polish": 5,
+			"Ukranian": 5 
+		}
+	},
+	{
+		name: "Liberia",
+		countryCode: "LBR",
+		languages: {
+			"English": 20,
+			"French": 5
+		}
+	},
+	{
+		name: "Lithuania",
+		countryCode: "LTU",
+		languages: {
+			"Russian": 20,
+			"Polish": 5
+		}
+	},
+	{
+		name: "Macedonia, FYR",
+		countryCode: "MKD",
+		languages: {
+			"Turkish": 5,
+			"Serbian": 5
+		}
+	},
+	{
+		name: "Malawi",
+		countryCode: "MWI",
+		languages: {
+			"English": 50,
+			"Swahili": 5,
+		}
+	},
+	{
+		name: "Mauritania",
+		countryCode: "MRT",
+		languages: {
+			"Arabic": 70,
+			"French": 30,
+			"Berber": 20
+		}
+	},
+	{
+		name: "Moldova",
+		countryCode: "MDA",
+		languages: {
+			"Romanian": 70,
+			"Russian": 15,
+			"Ukranian": 5,
+			"Bulgarian": 5 
+		}
+	},
+	{
+		name: "Monaco",
+		countryCode: "MCO",
+		languages: {
+			"French": 90,
+			"Italian": 40,
+			"English": 40 
+		}
+	},
+	{
+		name: "Namibia",
+		countryCode: "NAM",
+		languages: {
+			"Afrikaans": 30,
+			"English": 5
+		}
+	},
+	{
+		name: "Niger",
+		countryCode: "NER",
+		languages: {
+			"French": 70
+		}
+	},
+	{
+		name: "Papua New Guinea",
+		countryCode: "PNG",
+		languages: {
+			"English": 10,
+
+		}
+	},
+	{
+		name: "Rwanda",
+		countryCode: "RWA",
+		languages: {
+			"French": 10,
+			"English": 5,
+			"Swahili": 5,
+			"Bantu": 90
+		}
+	},
+	{
+		name: "Senegal",
+		countryCode: "SEN",
+		languages: {
+			"French": 60 
+
+		}
+	},
+	{
+		name: "Sierra Leone",
+		countryCode: "",
+		languages: {
+			"English": 50
+		}
+	},
+	{
+		name: "Slovak Republic",
+		countryCode: "",
+		languages: {
+			"Hungarian": 15,
+			"Serbian": 5
+		}
+	},
+	{
+		name: "Somalia",
+		countryCode: "SLE",
+		languages: {
+			"Arabic": 50,
+			"Italian": 5,
+			"English": 5 
+		}
+	},
+	{
+		name: "South Sudan",
+		countryCode: "SSD",
+		languages: {
+			"English": 50,
+			"Arabic": 50
+		}
+	},
+	{
+		name: "Swaziland",
+		countryCode: "SWZ",
+		languages: {
+			"English": 70,
+			"Swahili": 20
+		}
+	},
+	{
+		name: "Timor-Leste",
+		countryCode: "TLS",
+		languages: {
+			"Portuguese": 50,
+			"Indonesian": 50,
+			"English": 10
+
+		}
+	},
+	{
+		name: "Togo",
+		countryCode: "TGO",
+		languages: {
+			"French": 60
+		}
+	},
+	{
+		name: "Tunisia",
+		countryCode: "TUN",
+		languages: {
+			"Arabic": 90,
+			"French": 60,
+			"Berber": 20
+		}
+	},
+	{
+		name: "Zambia",
+		countryCode: "ZMB",
+		languages: {
+			"English": 60,
+			"Bantu": 90
+		}
+	},
+	{
+		name: "Zimbabwe",
+		countryCode: "ZWE",
+		languages: {
+			"English": 30
+		}
+	}
 ];
 
