@@ -231,8 +231,8 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 							'<p>GDP: ' + gdp + '</p></div>';
 						};
 					};		
-				};
-			};
+				}
+			}
 		});	
 
 		window.addEventListener('resize', function() {

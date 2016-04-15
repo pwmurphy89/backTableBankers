@@ -29,8 +29,8 @@ interactiveMap.controller('homeMapController', function($scope, $http, $routePar
 						'<p>GDP: ' + gdp + '</p></div>';
 					};
 				};			
-			};
-		};
+			}
+		}
 	});
 
 	window.addEventListener('resize', function() {

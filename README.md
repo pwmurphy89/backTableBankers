@@ -15,7 +15,7 @@
 + Structured initial AngularJS components
 
 ### Keith
-+ Designed JSON 'database' to incorporate data on country names, country codes, languages spoken, population, and GDP
++ Designed JSON 'database' to incorporate data on country names, country codes, languages, population, and GDP
 + Used query builder to gather 'seed' JSON data from World Bank API
 + Added comments to JS scripts
 + Collaborated with team members to write filter-controller functions and debug JS scripts
