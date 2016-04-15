@@ -25,29 +25,29 @@
 
 ## Demo
 
-[Live Demo]: http://students.digitalcrafts.com/backTableBankers
+[Live Demo:](http://students.digitalcrafts.com/backTableBankers)
 
 ## Screenshots
 
-Home page:
+###Home page:
 ![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/home.png)
 
-Language search:
-![alt text]()
+###Language search:
+![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/lang.png)
 
-Language and population search:
-![alt text]()
+###Language and population search:
+![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/lang-pop.png)
 
-Language, population, and GDP search:
-![alt text]()
+###Language, population, and GDP search:
+![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/lang-pop-gdp.png)
 
-Custom popup data:
-![alt text]()
-![alt text]()
+###Custom popup data:
+![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/popup1.png)
+![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/popup2.png)
 
-Responsive design:
-![alt text]()
-![alt text]()
+###Responsive design:
+![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/responsive1.png)
+![alt text](https://raw.githubusercontent.com/rbunch-dc/backTableBankers/master/images/responsive2.png)
 
 ##Code examples
 
