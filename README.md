@@ -25,7 +25,10 @@
 
 
 ### Tristan
-+ Put out house fire
++ Helped create the Language Data and created function to sort the object
++ Created function to combine the data objects based on what data the user wants to see
++ Added function to see if the user has selected a query that return an empty object
++ Helped fix bugs and find solutions to problem in the routing and AngularJS components
 
 ## Demo
 
@@ -72,7 +75,18 @@
     </div> 
 </div>
 ```
-
+###Native Javascript used to sort data objects:
+```javascript
+function combine3(primaryObj, secondaryOneObj, secondaryTwoObj){
+    for(var key in primaryObj){
+        if(secondaryOneObj.hasOwnProperty(key) && secondaryTwoObj.hasOwnProperty(key)){
+        }else{
+            delete primaryObj[key];
+        }   
+    }
+    return primaryObj;
+}
+```
 ##TO DO
 
 + Add remaining countries
