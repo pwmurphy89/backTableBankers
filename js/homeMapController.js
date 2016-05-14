@@ -3,10 +3,11 @@ interactiveMap.controller('homeMapController', function($scope, $http, $routePar
 	$scope.map = new Datamap({
 		element: document.getElementById('map'),
 		fills: {
-			defaultFill: '#ccc'
+			defaultFill: '#ddd'
 		},
 		responsive: true,
 		geographyConfig: {
+			borderColor: '#999',
 			popupTemplate: function(geo) {				
 				// Get country name from datamaps
 				var countryName = geo.properties.name;
@@ -27,8 +28,8 @@ interactiveMap.controller('homeMapController', function($scope, $http, $routePar
 						'<p>Languages: ' + languageText + '</p>' +
 						'<p>Population: ' + population + '</p>' +
 						'<p>GDP: ' + gdp + '</p></div>';
-					}
-				}			
+					};
+				};			
 			}
 		}
 	});

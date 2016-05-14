@@ -4,6 +4,11 @@
     }
 }
 
+body{
+  background: url("/images/ocean1.jpg") no-repeat center center fixed; 
+  background-size: cover;
+}
+
 button {
   background-color: #4099ff;
   color: white;

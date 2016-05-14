@@ -204,11 +204,12 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 				'MEDIUM': '#D95757',
 				'MEDIUM-LOW': '#FF9C9C',
 				'LOW': '#FFD6D6',
-				defaultFill: '#ccc'
+				defaultFill: '#ddd'
 			},
 			data,
 			responsive: true,
 			geographyConfig: {
+				borderColor: '#999',
 				popupTemplate: function(geo) {				
 					// Get country name from datamaps
 					var countryName = geo.properties.name;
@@ -231,8 +232,8 @@ interactiveMap.controller('mapsController', function($scope, $http, $routeParams
 							'<p>GDP: ' + gdp + '</p></div>';
 						};
 					};		
-				};
-			};
+				}
+			}
 		});	
 
 		window.addEventListener('resize', function() {
