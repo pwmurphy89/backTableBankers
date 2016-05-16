@@ -4,12 +4,19 @@
 
 ## Summary
 
-#### Single page Angular app that allows user to filter search based on language, population, and GDP data, with each specific map having its own URL. 
+#### Single page Angular app that allows user to filter countries that meet specified language, population, and GDP selection. User may select any combination or number of search criterion to update map. .Each specific map has its own URL. 
 
 ## Team members and contributions
 
+### Patrick
++ Helped initiate idea and vision
++ Helped create Language Data
++ Created function to preserve dropdown slection when the location is changed
++ Helped modify function to update scope with button changes
++ Identified bugs and helped find solutions
+
 ### Jonathan Melin
-+ Initiated idea and vision
++ Helped initiate idea and vision
 + Designed layout
 + Implemented and customized DataMaps features (coloring, popups, etc.)
 + Structured initial AngularJS components
@@ -19,12 +26,6 @@
 + Used query builder to gather 'seed' JSON data from World Bank API
 + Added comments to JS scripts
 + Collaborated with team members to write filter-controller functions and debug JS scripts
-
-### Patrick
-+ Helped create Language Data
-+ Created function to preserve dropdown slection when the location is changed
-+ Helped modify function to update scope with button changes
-+ Identified a few bugs and helped find solutions
 
 ### Tristan
 + Helped create the Language Data and created function to sort the object
